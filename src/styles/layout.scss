@@ -1,0 +1,19 @@
+@import '_colors.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  // background-color: $c-black;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

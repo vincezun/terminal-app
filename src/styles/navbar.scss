@@ -1,0 +1,87 @@
+@import '_colors.scss';
+@import '_typography.scss';
+@import '_keyframes.scss';
+
+.navbar {
+  background-color: $c-700-gray;
+  // position: fixed;
+  width: 100%;
+  height: 5.5rem;
+  z-index: 3;
+
+  .companyLogo {
+    font-family: $f-medium;
+    font-size: 2.1rem;
+    color: $c-white;
+    border-bottom: 3px solid $c-400-gray;
+    transition: all 200ms ease;
+    float: left;
+    margin: 1.25rem 3rem;
+
+    &:hover {
+      border-bottom-color: $c-600-blue;
+    }
+  }
+
+  .menu {
+    padding: 2.2rem 2rem;
+    position: fixed;
+    top: 0;
+    right: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $c-black;
+    }
+
+    &.active {
+      background-color: $c-black;
+    }
+  }
+
+  .overlay {
+    background-color: $c-black;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 450ms ease;
+    transform: translate3d(0, -100%, 0);
+
+    li {
+      list-style: none;
+      text-align: left;
+      border-bottom: 1px solid $c-600-gray;
+      cursor: pointer;
+
+      a {
+        font-family: $f-regular;
+        font-size: 1.1rem;
+        color: $c-white;
+        line-height: 6rem;
+        letter-spacing: 0.15rem;
+        padding-left: 3rem;
+        display: inline-block;
+      }
+
+      &:hover {
+        background-color: $c-400-gray;
+      }
+
+      &:active {
+        background-color: $c-900-blue;
+      }
+    }
+
+    &.slideDown {
+      height: 365px;
+      margin-top: 5.5rem;
+
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .signUpPrimary {
+    display: none;
+  }
+}

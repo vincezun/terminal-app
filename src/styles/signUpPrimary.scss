@@ -1,0 +1,18 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.signUpPrimary {
+  font-family: $f-regular;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: $c-white;
+  padding: 0.65rem 2rem;
+  background-color: transparent;
+  border: 1px solid $c-400-gray;
+  letter-spacing: 0.15rem;
+  transition: all 200ms ease;
+
+  &:hover {
+    background-color: $c-black;
+  }
+}

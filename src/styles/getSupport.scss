@@ -1,0 +1,18 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.getSupport {
+  font-family: $f-medium;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $c-100-gray;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid rgba(215, 217, 222, 0.2);
+  background-color: transparent;
+  transition: all 500ms ease;
+
+  &:hover {
+    color: $c-white;
+    border-color: $c-300-gray;
+  }
+}

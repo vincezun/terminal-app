@@ -1,0 +1,24 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.getStartedPrimary {
+  font-family: $f-condensed-regular;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $c-white;
+  padding: 1.3rem 2.4rem;
+  background-color: $c-300-green;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11),
+    inset 0px -34px 50px -25px rgba(0, 0, 0, 0.16),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  transition: all 200ms ease;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:active {
+    box-shadow: inset 0px 3px 3px -1px rgba(0, 0, 0, 0.25);
+  }
+}

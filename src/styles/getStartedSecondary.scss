@@ -1,0 +1,16 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.getStartedSecondary {
+  font-family: $f-medium;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $c-200-green;
+  // padding: 1.3rem 2.4rem;
+  background-color: transparent;
+  transition: all 200ms ease;
+
+  &:hover {
+    color: $c-white;
+  }
+}
