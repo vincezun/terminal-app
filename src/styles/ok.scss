@@ -7,18 +7,22 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.68);
   border: none;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 1rem;
+  width: 27%;
+  cursor: pointer;
   background-color: $c-350-gray;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11),
-    inset 0px 34px 50px 25px rgba(0, 0, 0, 0.16),
+    inset 0px -34px 50px -25px rgba(0, 0, 0, 0.16),
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  border-left: 1px solid rgba($c-500-gray, 0.7);
   transition: all 200ms ease;
 
   &:hover {
-    box-shadow: none;
     color: $c-white;
+    background-color: #80858c;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
   }
 
   &:active {
