@@ -1,0 +1,77 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.darkGrayContainer {
+  background-color: $c-800-gray;
+
+  .w-container {
+    padding: 4rem 3rem;
+    text-align: left;
+  }
+
+  .getHelp h4,
+  .boringStuff h4 {
+    margin-top: 4rem;
+  }
+
+  h4 {
+    font-family: $f-condensed-regular;
+    font-size: 1.6rem;
+    color: $c-100-gray;
+  }
+
+  .footerLinks {
+    margin-top: 1.5rem;
+    list-style: none;
+
+    li a {
+      color: $c-250-gray;
+      font-family: $f-regular;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+
+  .boringStuff {
+    .logo {
+      width: 17px;
+      height: 17px;
+    }
+
+    .twitter,
+    .facebook {
+      transition: 400ms ease;
+
+      &:hover {
+        filter: brightness(2);
+      }
+    }
+  }
+
+  .newsLetter {
+    margin-top: 3.3rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    .email {
+      font-family: $f-regular;
+      font-size: 1.4rem;
+      width: 73%;
+      padding: 0.7em 1.2rem;
+      background-color: $c-400-gray;
+      border: none;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      caret-color: $c-white;
+
+      &::placeholder {
+        color: rgba($c-100-gray, 0.45);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
