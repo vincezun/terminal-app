@@ -1,18 +1,19 @@
 import React, { Fragment, Component } from 'react';
 import { Link } from 'gatsby';
-import SignUpPrimary from '../Button/signUpPrimary';
-import '../../styles/navbar.scss';
 
+import '../../styles/navbar.scss';
+import SignUpPrimary from '../Button/signUpPrimary';
 import hamburger from '../../images/hamburger.svg';
 
 class navbar extends Component {
   componentDidMount() {
-    const menu = document.getElementById('menu');
-    const overlay = document.getElementById('overlay');
+    var menu = document.getElementById('menu');
+    var overlay = document.getElementById('overlay');
 
     if (menu) {
       menu.addEventListener('click', function() {
         overlay.classList.toggle('slideDown');
+
         if (overlay.classList.contains('slideDown')) {
           menu.classList.add('active');
         } else {
@@ -25,37 +26,53 @@ class navbar extends Component {
   render() {
     return (
       <Fragment>
-        <nav className='navbar' id='navbar'>
-          <Link to='/' className='companyLogo'>
-            terminal
-          </Link>
+        <div className='navBar'>
+          <div className='w-container'>
+            <Link to='/' className='companyLogo'>
+              terminal
+            </Link>
 
-          <div className='menu' id='menu'>
-            <img src={hamburger} alt='menu bar' className='hamburger' />
+            <div className='menu' id='menu'>
+              <img src={hamburger} alt='menu bar' className='hamburger' />
+            </div>
           </div>
+        </div>
 
+        <nav className='navLinks'>
           <ul className='overlay' id='overlay'>
             <li>
-              <Link to='/'>HOME</Link>
+              <Link to='/' activeClassName='active'>
+                HOME
+              </Link>
             </li>
             <li>
-              <Link to='/pricing'>PRICING</Link>
+              <Link to='/pricing' activeClassName='active'>
+                PRICING
+              </Link>
             </li>
             <li>
-              <Link to='/services'>SERVICES</Link>
+              <Link to='/services' activeClassName='active'>
+                SERVICES
+              </Link>
             </li>
             <li>
-              <Link to='/about'>ABOUT</Link>
+              <Link to='/about' activeClassName='active'>
+                ABOUT
+              </Link>
             </li>
             <li>
-              <Link to='/contact'>CONTACT</Link>
+              <Link to='/contact' activeClassName='active'>
+                CONTACT
+              </Link>
             </li>
             <li>
-              <Link to='/sign-up'>SIGN UP</Link>
+              <Link to='/sign-up' activeClassName='active'>
+                SIGN UP
+              </Link>
             </li>
           </ul>
 
-          <SignUpPrimary className='signUpPrimary' />
+          <SignUpPrimary className='signUpPrimaryBtn' />
         </nav>
       </Fragment>
     );

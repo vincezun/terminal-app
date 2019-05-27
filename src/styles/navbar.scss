@@ -1,22 +1,26 @@
 @import '_colors.scss';
 @import '_typography.scss';
-@import '_keyframes.scss';
 
-.navbar {
-  background-color: $c-700-gray;
-  // position: fixed;
+%wPos {
   width: 100%;
-  height: 5.5rem;
-  z-index: 3;
+  position: fixed;
+}
+
+.navBar {
+  @extend %wPos;
+  background-color: $c-700-gray;
+  height: 5.45rem;
+  z-index: 99;
 
   .companyLogo {
     font-family: $f-medium;
     font-size: 2.1rem;
     color: $c-white;
     border-bottom: 3px solid $c-400-gray;
-    transition: all 200ms ease;
+    transition: 200ms ease;
     float: left;
     margin: 1.25rem 3rem;
+    user-select: none;
 
     &:hover {
       border-bottom-color: $c-600-blue;
@@ -24,11 +28,15 @@
   }
 
   .menu {
-    padding: 2.2rem 2rem;
-    position: fixed;
-    top: 0;
+    height: 100%;
+    width: 5.5rem;
+    position: absolute;
     right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    user-select: none;
 
     &:hover {
       background-color: $c-black;
@@ -38,13 +46,15 @@
       background-color: $c-black;
     }
   }
+}
 
+$insetTopShadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+
+.navLinks {
   .overlay {
+    @extend %wPos;
     background-color: $c-black;
-    top: 0;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+    z-index: 0;
     transition: 450ms ease;
     transform: translate3d(0, -100%, 0);
 
@@ -58,30 +68,38 @@
         font-family: $f-regular;
         font-size: 1.1rem;
         color: $c-white;
-        line-height: 6rem;
+        line-height: 5.45rem;
         letter-spacing: 0.15rem;
         padding-left: 3rem;
-        display: inline-block;
+        display: block;
+        user-select: none;
+
+        &:active,
+        &.active {
+          background-color: $c-900-blue;
+          box-shadow: $insetTopShadow;
+        }
       }
 
       &:hover {
         background-color: $c-400-gray;
-      }
+        box-shadow: $insetTopShadow;
+        transition: 320ms ease;
 
-      &:active {
-        background-color: $c-900-blue;
+        &:last-child {
+          border-bottom: 1px solid $c-400-gray;
+        }
       }
     }
 
     &.slideDown {
-      height: 365px;
-      margin-top: 5.5rem;
-
+      max-height: 350px;
+      margin-top: 5.45rem;
       transform: translate3d(0, 0, 0);
     }
   }
 
-  .signUpPrimary {
+  .signUpPrimaryBtn {
     display: none;
   }
 }
