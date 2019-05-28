@@ -1,0 +1,49 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.featureOneWrapper {
+  section {
+    margin-top: 0.75rem;
+
+    .icon {
+      filter: brightness(0.93);
+      width: 55px;
+      height: 55px;
+      padding: 1.2rem 1.2rem;
+    }
+
+    figure {
+      display: flex;
+      flex-flow: row;
+      text-align: left;
+      align-items: center;
+
+      .record,
+      .play,
+      .pause {
+        border: 2px solid $c-400-gray;
+      }
+
+      .play {
+        margin: 1.25rem 0;
+      }
+
+      figcaption {
+        font-family: $f-condensed-regular;
+        font-size: 1.6rem;
+        color: $c-100-gray;
+      }
+
+      p {
+        font-family: $f-regular;
+        font-size: 1.2rem;
+        color: $c-300-gray;
+        margin-top: 0.25rem;
+      }
+
+      div {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}

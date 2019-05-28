@@ -1,0 +1,228 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.homeWrapper {
+  margin-top: 4rem;
+
+  .w-container {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+
+  %heading {
+    font-family: $f-regular;
+    font-size: 3rem;
+    color: $c-50-gray;
+  }
+
+  %paragraph {
+    font-family: $f-regular;
+    font-size: 1.4rem;
+    color: $c-200-gray;
+    line-height: 2.2rem;
+    text-align: left;
+    padding-bottom: 1.75rem;
+    padding-top: 1.25rem;
+  }
+
+  > section:first-child {
+    background-image: linear-gradient(
+        315deg,
+        rgba(17, 201, 247, 0.59),
+        rgba(69, 110, 196, 0.51) 49%,
+        rgba(113, 32, 153, 0.45) 100%
+      ),
+      url('../images/dark-laptop.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    #smallHeading {
+      font-family: $f-regular;
+      color: $c-50-gray;
+      font-size: 2.1rem;
+      line-height: 2.6rem;
+      padding-top: 7rem;
+    }
+
+    h1 {
+      font-family: $f-condensed-bold;
+      font-size: 5rem;
+      line-height: 4.8rem;
+      margin-top: 1rem;
+      color: $c-white;
+    }
+
+    p {
+      font-family: $f-slab-light;
+      font-size: 1.75rem;
+      color: rgba(242, 246, 252, 0.63);
+      margin-top: 1.5rem;
+      padding: 0 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    .btns {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 4rem 0.75rem;
+    }
+
+    .blackIpad {
+      max-width: 100%;
+      display: inline-block;
+      padding: 0 0.5rem;
+      margin-top: 1.8rem;
+    }
+  }
+
+  section:nth-child(2) {
+    background-color: $c-black;
+    position: relative;
+    z-index: 2;
+    margin-top: -21rem;
+
+    p {
+      font-family: $f-slab-light;
+      font-size: 1.4rem;
+      color: dimgrey;
+      padding-top: 2rem;
+    }
+
+    .press {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+      margin-top: 2.5rem;
+
+      img {
+        padding: 1.5rem 8.5rem;
+        display: block;
+        width: 100%;
+
+        transition: 450ms ease;
+
+        &:hover {
+          filter: brightness(1.4);
+        }
+      }
+
+      .logo {
+        max-width: 100%;
+      }
+    }
+  }
+
+  section:nth-child(3) {
+    position: relative;
+    background-color: $c-600-gray;
+
+    .w-container {
+      padding: 0 0.7rem;
+    }
+
+    #heading {
+      @extend %heading;
+      padding-top: 3.5rem;
+      line-height: 3.5rem;
+      padding-bottom: 0;
+    }
+
+    p {
+      @extend %paragraph;
+    }
+
+    .allDevices {
+      max-width: 100%;
+      padding: 2rem 3.5rem 3.75rem;
+    }
+  }
+
+  section:nth-child(4) {
+    background-color: $c-800-gray;
+
+    .w-container {
+      padding: 3.8em 0.7em;
+    }
+
+    .blackIpad {
+      max-width: 100%;
+      padding: 0 1.5rem;
+    }
+
+    .easyToUse {
+      margin-top: -7rem;
+      position: relative;
+      background-color: $c-800-gray;
+
+      #heading {
+        @extend %heading;
+        padding-top: 3rem;
+        border-top: 3px solid $c-400-gray;
+      }
+
+      #description,
+      #heading {
+        text-align: left;
+      }
+
+      #description {
+        @extend %paragraph;
+      }
+    }
+  }
+
+  section:nth-child(5) {
+    background-color: $c-600-gray;
+
+    .w-container {
+      padding: 3.8em 0.7em;
+    }
+
+    .takeItAnywhere {
+      #heading {
+        @extend %heading;
+      }
+
+      #description,
+      #heading {
+        text-align: left;
+      }
+
+      #description {
+        @extend %paragraph;
+      }
+    }
+
+    .iPhone {
+      width: 221px;
+      margin-top: 2.5rem;
+    }
+  }
+
+  section:nth-child(6) {
+    position: relative;
+    background-color: $c-black;
+    margin-top: -17em;
+
+    .w-container {
+      padding: 3.8em 0.7em;
+    }
+
+    .pricing {
+      #heading {
+        @extend %heading;
+      }
+
+      #description,
+      #heading {
+        text-align: left;
+      }
+
+      #description {
+        @extend %paragraph;
+      }
+    }
+  }
+}
