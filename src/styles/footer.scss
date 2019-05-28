@@ -3,9 +3,11 @@
 
 .darkGrayContainer {
   background-color: $c-800-gray;
+  position: relative;
+  z-index: 2;
 
   .w-container {
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
     text-align: left;
   }
 
