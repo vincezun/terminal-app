@@ -84,6 +84,7 @@ const footer = () => {
               className='facebook logo'
             />
           </a>
+          <br />
           <Link to='/' className='companyLogo'>
             terminal
           </Link>
