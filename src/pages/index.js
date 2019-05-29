@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout/layout';
 import '../styles/index.scss';
-// import SignUpPrimary from '../components/Button/signUpPrimary';
-// import SignUpSecondary from '../components/Button/signUpSecondary';
-// import SignUpToday from '../components/Button/signUpToday';
+
 import GetStartedPrimary from '../components/Button/getStartedPrimary';
-// import GetStartedSecondary from '../components/Button/getStartedSecondary';
-import GetStarted from '../components/Button/getStarted';
-// import GetSupport from '../components/Button/getSupport';
 import LearnMore from '../components/Button/LearnMore';
-// import SendEmail from '../components/Button/sendEmail';
-// import Ok from '../components/Button/ok';
+
 import blackIpad from '../images/black-ipad.png';
 import forbes from '../images/forbes-logo.svg';
 import fastcompany from '../images/fastcompany-logo.svg';
 import wired from '../images/wired-logo.svg';
 import zdnet from '../images/zdnet-logo.svg';
 import techcrunch from '../images/techcrunch-logo.svg';
-import allDevices from '../images/all-devices.png';
 import iPhoneFlat from '../images/iPhone-flat.png';
 
 import FeaturerOne from '../components/Feature/featureOne';
 import FeatureTwo from '../components/Feature/featureTwo';
-import Pricing from '../components/pricing';
+import Plans from '../components/plans';
+import TimeTracking from '../components/timeTracking';
+import EmailSupport from '../components/emailSupport';
 
 class index extends Component {
   render() {
@@ -41,8 +36,9 @@ class index extends Component {
                 <GetStartedPrimary />
                 <LearnMore />
               </div>
-
-              <img src={blackIpad} alt='Black Ipad' className='blackIpad' />
+              <div className='imgCrop'>
+                <img src={blackIpad} alt='Black Ipad' className='blackIpad' />
+              </div>
             </div>
           </section>
           <section>
@@ -66,20 +62,13 @@ class index extends Component {
             </div>
           </section>
           <section>
-            <div className='w-container'>
-              <p id='heading'>Time Tracking... Everywhere</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla.
-              </p>
-              <GetStarted />
-              <img src={allDevices} alt='All devices' className='allDevices' />
-            </div>
+            <TimeTracking heading='Time Tracking... Everywhere' />
           </section>
           <section>
             <div className='w-container'>
-              <img src={blackIpad} alt='Black ipad' className='blackIpad' />
+              <div className='imgCrop'>
+                <img src={blackIpad} alt='Black ipad' className='blackIpad' />
+              </div>
               <div className='easyToUse'>
                 <p id='heading'>Easy to Use</p>
                 <p id='description'>
@@ -114,8 +103,11 @@ class index extends Component {
                   trial today!
                 </p>
               </div>
-              <Pricing />
+              <Plans />
             </div>
+          </section>
+          <section>
+            <EmailSupport heading='24/7 Email Support' />
           </section>
         </div>
       </Layout>
