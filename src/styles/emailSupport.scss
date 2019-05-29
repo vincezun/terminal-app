@@ -1,0 +1,51 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+%heading {
+  font-family: $f-regular;
+  font-size: 3rem;
+  color: $c-50-gray;
+}
+
+%paragraph {
+  font-family: $f-regular;
+  font-size: 1.4rem;
+  color: $c-200-gray;
+  line-height: 2.2rem;
+  text-align: left;
+  padding-bottom: 1.75rem;
+  padding-top: 1.25rem;
+}
+
+.emailSupportWrapper {
+  background-color: $c-800-gray;
+
+  .bagAndHands {
+    max-width: 100%;
+    background-image: url('../images/bag-and-hands-bw.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 226px;
+  }
+
+  #heading {
+    @extend %heading;
+    padding-top: 3.5rem;
+    line-height: 3.5rem;
+    padding-bottom: 0;
+  }
+
+  #description {
+    @extend %paragraph;
+  }
+
+  .support {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+  }
+
+  .w-container {
+    padding-bottom: 6rem;
+  }
+}

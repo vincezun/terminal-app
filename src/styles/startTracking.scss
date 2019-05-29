@@ -1,0 +1,36 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.startTracking {
+  background-color: $c-black;
+  background-image: linear-gradient(
+    312deg,
+    rgba(136, 92, 156, 0.63) 6%,
+    rgba(143, 90, 166, 0.8) 100%
+  );
+
+  .w-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .content {
+    #heading {
+      font-family: $f-condensed-regular;
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+      color: $c-50-gray;
+      padding-top: 4rem;
+    }
+
+    #description {
+      font-family: $f-slab-light;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: rgba(242, 246, 252, 0.63);
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
