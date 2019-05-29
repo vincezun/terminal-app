@@ -103,3 +103,15 @@ $insetTopShadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
     display: none;
   }
 }
+
+@media only screen and(min-width: 480px) {
+  .navBar {
+    .companyLogo {
+      margin-left: 3rem;
+    }
+
+    .menu {
+      right: 3rem;
+    }
+  }
+}

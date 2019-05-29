@@ -10,6 +10,8 @@
   border-bottom: 3px solid rgba(215, 217, 222, 0.2);
   background-color: transparent;
   transition: all 500ms ease;
+  display: inline-flex;
+  margin-top: 2rem;
 
   &:hover {
     color: $c-white;
