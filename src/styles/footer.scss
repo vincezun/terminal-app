@@ -3,8 +3,6 @@
 
 .darkGrayContainer {
   background-color: $c-800-gray;
-  position: relative;
-  z-index: 2;
 
   .w-container {
     padding: 4rem 2rem;
@@ -34,48 +32,6 @@
     }
   }
 
-  .boringStuff {
-    .logo {
-      width: 17px;
-      height: 17px;
-      margin: 2rem 0;
-    }
-
-    .twitter,
-    .facebook {
-      transition: 400ms ease;
-
-      &:hover {
-        filter: brightness(2);
-      }
-    }
-
-    .facebook {
-      margin-left: 1rem;
-    }
-
-    p {
-      font-family: $f-regular;
-      font-size: 1.1rem;
-      color: $c-400-gray;
-      margin-top: 1rem;
-    }
-
-    .companyLogo {
-      font-family: $f-medium;
-      font-size: 2.1rem;
-      color: $c-400-gray;
-      border-bottom: 3px solid $c-400-gray;
-      transition: 200ms ease;
-
-      user-select: none;
-
-      &:hover {
-        border-bottom-color: $c-600-blue;
-      }
-    }
-  }
-
   .newsLetter {
     margin-top: 3.3rem;
     display: flex;
@@ -102,6 +58,81 @@
         outline: none;
         background-color: $c-450-gray;
       }
+    }
+
+    .logo {
+      width: 17px;
+      height: 17px;
+      margin: 2rem 0;
+    }
+
+    .socialLinks {
+      width: 100%;
+
+      .twitter,
+      .facebook {
+        transition: 400ms ease;
+
+        &:hover {
+          filter: brightness(2);
+        }
+      }
+
+      .facebook {
+        margin-left: 1rem;
+      }
+    }
+
+    p {
+      font-family: $f-regular;
+      font-size: 1.1rem;
+      color: $c-400-gray;
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    .companyLogo {
+      font-family: $f-medium;
+      font-size: 2.1rem;
+      color: $c-400-gray;
+      border-bottom: 3px solid $c-400-gray;
+      transition: 200ms ease;
+
+      user-select: none;
+
+      &:hover {
+        border-bottom-color: $c-600-blue;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .darkGrayContainer {
+    display: block;
+    .w-container {
+      display: grid;
+      grid-template-columns: 169px 169px 169px 169px;
+      justify-content: center;
+      align-items: flex-start;
+      grid-column-gap: 2rem;
+      padding: 8rem 1.5rem;
+    }
+
+    .getHelp h4,
+    .boringStuff h4,
+    .newsLetter {
+      margin-top: 0rem;
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .darkGrayContainer {
+    .w-container {
+      grid-template-columns: 220px 220px 220px 220px;
+      grid-column-gap: 2.1rem;
+      padding: 8rem 2.5rem;
     }
   }
 }

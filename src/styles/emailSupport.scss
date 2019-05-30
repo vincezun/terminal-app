@@ -49,3 +49,26 @@
     padding-bottom: 6rem;
   }
 }
+
+@media only screen and(min-width: 768px) {
+  .emailSupportWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .bagAndHands {
+      height: 100%;
+    }
+
+    .support {
+      padding: 3rem 2rem;
+    }
+  }
+}
+
+@media only screen and(min-width: 1112px) {
+  .emailSupportWrapper {
+    .support {
+      width: 526px;
+    }
+  }
+}

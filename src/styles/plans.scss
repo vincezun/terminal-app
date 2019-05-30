@@ -1,7 +1,7 @@
 @import '_colors.scss';
 @import '_typography.scss';
 
-.pricingWrapper {
+.plansWrapper {
   .solo,
   .pro,
   .team {
@@ -14,11 +14,11 @@
       color: $c-100-gray;
       display: block;
       text-transform: uppercase;
-      padding-top: 2rem;
+      padding: 1.85rem 0;
     }
 
     .price {
-      padding-top: 6rem;
+      padding-top: 3.5rem;
 
       li {
         list-style: none;
@@ -69,7 +69,6 @@
 
     #pro {
       background-color: rgba(215, 217, 222, 0.09);
-      padding: 1.8rem 0;
     }
   }
 
@@ -82,7 +81,7 @@
 }
 
 @media only screen and(min-width: 480px) {
-  .pricingWrapper {
+  .plansWrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -92,6 +91,58 @@
     .pro,
     .team {
       width: 90%;
+    }
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .plansWrapper {
+    display: grid;
+    grid-template-columns: 237px 237px 237px;
+    grid-column-gap: 1.4rem;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      'plans plans plans'
+      'needhelp needhelp needhelp';
+    grid-area: plans;
+
+    .pro {
+      margin: 0;
+    }
+
+    .solo,
+    .pro,
+    .team {
+      width: 237px;
+    }
+
+    .solo {
+      justify-self: left;
+    }
+
+    .team {
+      justify-self: right;
+    }
+    #needHelp {
+      grid-area: needhelp;
+      margin-top: 0;
+      padding: 4rem 0;
+      justify-self: right;
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .plansWrapper {
+    grid-template-columns: 299px 299px 299px;
+    grid-column-gap: 2rem;
+
+    .solo,
+    .pro,
+    .team {
+      width: 299px;
     }
   }
 }

@@ -34,3 +34,32 @@
     }
   }
 }
+
+@media only screen and(min-width: 768px) {
+  .startTracking {
+    .w-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-content: center;
+      align-items: center;
+      justify-self: center;
+      align-self: center;
+      padding: 5rem 0;
+      margin: 0 1.5rem;
+    }
+
+    .content {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .startTracking {
+    .w-container {
+      grid-template-columns: 554px 350px;
+      grid-column-gap: 3.8rem;
+      margin: 0 2.5rem;
+    }
+  }
+}
