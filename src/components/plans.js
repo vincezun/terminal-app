@@ -3,9 +3,9 @@ import '../styles/plans.scss';
 
 import GetStartedNow from './Button/getStarted';
 
-const pricing = () => {
+const plans = () => {
   return (
-    <div className='pricingWrapper'>
+    <div className='plansWrapper'>
       <div className='solo'>
         <p className='heading'>SOLO</p>
         <ul className='price'>
@@ -55,4 +55,4 @@ const pricing = () => {
   );
 };
 
-export default pricing;
+export default plans;

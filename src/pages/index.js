@@ -13,7 +13,7 @@ import zdnet from '../images/zdnet-logo.svg';
 import techcrunch from '../images/techcrunch-logo.svg';
 import iPhoneFlat from '../images/iPhone-flat.png';
 
-import FeaturerOne from '../components/Feature/featureOne';
+import FeatureOne from '../components/Feature/featureOne';
 import FeatureTwo from '../components/Feature/featureTwo';
 import Plans from '../components/plans';
 import TimeTracking from '../components/timeTracking';
@@ -76,8 +76,8 @@ class index extends Component {
                   Suspendisse varius enim in eros elementum tristique. Duis
                   cursus, mi quis viverra ornare, eros dolor interdum nulla.
                 </p>
+                <FeatureOne />
               </div>
-              <FeaturerOne />
             </div>
           </section>
           <section>
@@ -89,9 +89,11 @@ class index extends Component {
                   Suspendisse varius enim in eros elementum tristique. Duis
                   cursus, mi quis viverra ornare.
                 </p>
+                <FeatureTwo />
               </div>
-              <FeatureTwo />
-              <img src={iPhoneFlat} alt='iPhone' className='iPhone' />
+              <div className='imgCrop'>
+                <img src={iPhoneFlat} alt='iPhone' className='iPhone' />
+              </div>
             </div>
           </section>
           <section>
@@ -102,8 +104,8 @@ class index extends Component {
                   No commitments. No credit cards required. Start your 14-day
                   trial today!
                 </p>
+                <Plans />
               </div>
-              <Plans />
             </div>
           </section>
           <section>

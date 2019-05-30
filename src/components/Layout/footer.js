@@ -57,34 +57,35 @@ const footer = () => {
               <Link to='/'>Terms of Service</Link>
             </li>
           </ul>
+        </div>
 
-          <div className='newsLetter'>
-            <input
-              type='text'
-              name='email'
-              id='email'
-              className='email'
-              placeholder='Your email'
-            />
-            <Ok className='okBtn' />
+        <div className='newsLetter'>
+          <input
+            type='text'
+            name='email'
+            id='email'
+            className='email'
+            placeholder='Your email'
+          />
+          <Ok className='okBtn' />
+          <p>We send about 2 emails a month</p>
+          <div className='socialLinks'>
+            <a href='https://www.twitter.com'>
+              <img
+                src={twitterLogo}
+                alt='faceboook logo'
+                className='twitter logo'
+              />
+            </a>
+            <a href='https://www.facebook.com'>
+              <img
+                src={facebookLogo}
+                alt='facebook logo'
+                className='facebook logo'
+              />
+            </a>
           </div>
 
-          <p>We send about 2 emails a month</p>
-          <a href='https://www.twitter.com'>
-            <img
-              src={twitterLogo}
-              alt='faceboook logo'
-              className='twitter logo'
-            />
-          </a>
-          <a href='https://www.facebook.com'>
-            <img
-              src={facebookLogo}
-              alt='facebook logo'
-              className='facebook logo'
-            />
-          </a>
-          <br />
           <Link to='/' className='companyLogo'>
             terminal
           </Link>

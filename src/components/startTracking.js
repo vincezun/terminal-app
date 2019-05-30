@@ -13,7 +13,9 @@ const startTracking = () => {
             Clocks are so 2000. Get the time tracking of the future.
           </p>
         </div>
-        <SignUpToday />
+        <div>
+          <SignUpToday />
+        </div>
       </div>
     </div>
   );
