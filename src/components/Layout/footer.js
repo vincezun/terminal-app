@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import '../../styles/footer.scss';
-import Ok from '../Button/ok';
-import twitterLogo from '../../images/twitter-icon.svg';
-import facebookLogo from '../../images/facebook-icon.svg';
+import NewsLetter from '../newsLetter';
 
 const footer = () => {
   return (
@@ -58,38 +56,7 @@ const footer = () => {
             </li>
           </ul>
         </div>
-
-        <div className='newsLetter'>
-          <input
-            type='text'
-            name='email'
-            id='email'
-            className='email'
-            placeholder='Your email'
-          />
-          <Ok className='okBtn' />
-          <p>We send about 2 emails a month</p>
-          <div className='socialLinks'>
-            <a href='https://www.twitter.com'>
-              <img
-                src={twitterLogo}
-                alt='faceboook logo'
-                className='twitter logo'
-              />
-            </a>
-            <a href='https://www.facebook.com'>
-              <img
-                src={facebookLogo}
-                alt='facebook logo'
-                className='facebook logo'
-              />
-            </a>
-          </div>
-
-          <Link to='/' className='companyLogo'>
-            terminal
-          </Link>
-        </div>
+        <NewsLetter />
       </footer>
     </div>
   );

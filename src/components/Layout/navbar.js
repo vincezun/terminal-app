@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'gatsby';
 
 import '../../styles/navbar.scss';
@@ -25,19 +25,20 @@ class navbar extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className='navBarWrapper'>
         <div className='navBar'>
           <div className='w-container'>
-            <Link to='/' className='companyLogo'>
-              terminal
-            </Link>
+            <div>
+              <Link to='/' className='companyLogo'>
+                terminal
+              </Link>
+            </div>
 
             <div className='menu' id='menu'>
               <img src={hamburger} alt='menu bar' className='hamburger' />
             </div>
           </div>
         </div>
-
         <nav className='navLinks'>
           <ul className='overlay' id='overlay'>
             <li>
@@ -70,11 +71,10 @@ class navbar extends Component {
                 SIGN UP
               </Link>
             </li>
+            <SignUpPrimary />
           </ul>
-
-          <SignUpPrimary className='signUpPrimaryBtn' />
         </nav>
-      </Fragment>
+      </div>
     );
   }
 }
