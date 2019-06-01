@@ -6,7 +6,7 @@ import Plans from '../components/plans';
 
 const pricing = () => {
   return (
-    <Layout>
+    <Layout title='Pricing | Terminal'>
       <div className='pricingWrapper'>
         <section>
           <div className='w-container'>
