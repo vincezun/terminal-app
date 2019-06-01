@@ -1,0 +1,212 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.aboutWrapper {
+  .w-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  > section:first-child {
+    background-color: $c-black;
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+
+    #heading {
+      font-family: $f-condensed-regular;
+      font-size: 3.8rem;
+      line-height: 4.4rem;
+      text-transform: uppercase;
+      color: $c-50-gray;
+      text-align: left;
+    }
+
+    #description {
+      font-family: $f-slab-light;
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+      color: rgba(242, 246, 252, 0.63);
+      text-align: left;
+      margin: 1rem 0 0;
+    }
+
+    .about {
+      p {
+        font-family: $f-regular;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: $c-200-gray;
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+
+      div:first-child {
+        p:first-child {
+          margin-top: 3rem;
+        }
+      }
+
+      div:last-child {
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  section:nth-child(2) {
+    .theTeam {
+      background-image: url('../images/team.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 280px;
+      width: 100%;
+    }
+
+    .mediumGrayContainer {
+      background-color: $c-600-gray;
+      padding: 4.5rem 0;
+
+      #heading {
+        font-family: $f-regular;
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        color: $c-50-gray;
+        text-align: left;
+      }
+
+      .origin {
+        .title {
+          font-family: $f-regular;
+          font-size: 1.9rem;
+          line-height: 2rem;
+          color: $c-50-gray;
+          text-align: left;
+          margin: 3.2rem 0 0.8rem;
+        }
+
+        .description {
+          font-family: $f-regular;
+          font-size: 1.4rem;
+          line-height: 2.2rem;
+          color: $c-200-gray;
+          text-align: left;
+          margin-bottom: 1.5rem;
+        }
+
+        div:nth-child(2) {
+          div:last-child {
+            p:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 480px) {
+  .aboutWrapper {
+    .w-container {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .aboutWrapper {
+    .w-container {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    > section:first-child {
+      padding: 6rem 0 0;
+      display: grid;
+      justify-content: center;
+
+      #heading,
+      #description {
+        width: 738px;
+      }
+
+      #heading {
+        padding-top: 8rem;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 359px 359px;
+        grid-column-gap: 2rem;
+        margin-top: 4rem;
+        padding-bottom: 8rem;
+
+        div:first-child {
+          p:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    section:nth-child(2) {
+      .theTeam {
+        height: 330px;
+      }
+
+      .mediumGrayContainer {
+        padding: 8rem 0;
+
+        .w-container {
+          display: grid;
+          justify-content: center;
+        }
+
+        #heading {
+          width: 738px;
+        }
+
+        .origin {
+          display: grid;
+          grid-template-columns: 359px 359px;
+          grid-column-gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .aboutWrapper {
+    .w-container {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+
+    > section:first-child {
+      #heading,
+      #description {
+        width: 942px;
+      }
+
+      .about {
+        grid-template-columns: 461px 461px;
+      }
+    }
+
+    section:nth-child(2) {
+      .mediumGrayContainer {
+        #heading {
+          width: 942px;
+        }
+
+        .origin {
+          grid-template-columns: 461px 461px;
+        }
+      }
+    }
+  }
+}
