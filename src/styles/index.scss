@@ -3,8 +3,8 @@
 
 .homeWrapper {
   .w-container {
-    margin-left: 1.4rem;
-    margin-right: 1.4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   %heading {
@@ -64,7 +64,7 @@
     .btns {
       display: flex;
       flex-flow: row wrap;
-      margin: 4rem 0.75rem;
+      margin: 4rem 0;
     }
 
     .imgCrop {
@@ -74,7 +74,6 @@
       .blackIpad {
         width: 100%;
         display: inline-block;
-        padding: 0 0.5rem;
       }
     }
   }
@@ -120,7 +119,7 @@
     background-color: $c-800-gray;
 
     .w-container {
-      padding: 3.8em 0.7em;
+      padding: 4em 0;
     }
 
     .imgCrop {
@@ -157,7 +156,7 @@
     background-color: $c-600-gray;
 
     .w-container {
-      padding: 3.8em 0.7em 0;
+      padding: 4em 0 0;
     }
 
     .takeItAnywhere {
@@ -191,7 +190,7 @@
     background-color: $c-black;
 
     .w-container {
-      padding: 3.8em 0.7em;
+      padding: 4em 0;
     }
 
     .pricing {
@@ -406,6 +405,7 @@
 
     section:nth-child(6) {
       .w-container {
+        padding: 8rem 0;
         padding-left: 0;
         padding-right: 0;
         display: flex;

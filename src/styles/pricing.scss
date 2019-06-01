@@ -9,10 +9,9 @@
 
   > section:first-child {
     background-color: $c-black;
+    padding: 11rem 0.7rem 3.8rem;
 
     .pricing {
-      padding: 11rem 0.7rem 3.8rem;
-
       #heading {
         font-family: $f-condensed-regular;
         font-size: 3.8rem;
@@ -103,6 +102,15 @@
       justify-content: center;
     }
 
+    > section:first-child {
+      background-color: $c-black;
+      padding: 6rem 0 0;
+
+      .pricing {
+        padding: 8rem 0;
+      }
+    }
+
     section:nth-child(2) {
       .questions {
         padding: 8rem 0;
@@ -111,23 +119,15 @@
           display: grid;
           grid-template-columns: 359px 359px;
           grid-column-gap: 2rem;
-          grid-template-rows: auto;
-          grid-template-areas:
-            'heading heading'
-            'questions questions'
-            'reachus reachus';
-          grid-area: questions;
           margin-top: 1.5rem;
           justify-self: center;
         }
 
         #heading {
-          grid-area: heading;
           width: 738px;
         }
 
         .reachUs {
-          grid-area: reachus;
           text-align: center;
           width: 738px;
         }

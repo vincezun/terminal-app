@@ -1,22 +1,6 @@
 @import '_colors.scss';
 @import '_typography.scss';
 
-%heading {
-  font-family: $f-regular;
-  font-size: 3rem;
-  color: $c-50-gray;
-}
-
-%paragraph {
-  font-family: $f-regular;
-  font-size: 1.4rem;
-  color: $c-200-gray;
-  line-height: 2.2rem;
-  text-align: left;
-  padding-bottom: 1.75rem;
-  padding-top: 1.25rem;
-}
-
 .emailSupportWrapper {
   background-color: $c-800-gray;
 
@@ -29,14 +13,23 @@
   }
 
   #heading {
-    @extend %heading;
+    font-family: $f-regular;
+    font-size: 3rem;
+    color: $c-50-gray;
+    text-align: left;
     padding-top: 3.5rem;
     line-height: 3.5rem;
     padding-bottom: 0;
   }
 
   #description {
-    @extend %paragraph;
+    font-family: $f-regular;
+    font-size: 1.4rem;
+    color: $c-200-gray;
+    line-height: 2.2rem;
+    text-align: left;
+    padding-bottom: 1.75rem;
+    padding-top: 1.25rem;
   }
 
   .support {
@@ -47,6 +40,8 @@
 
   .w-container {
     padding-bottom: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
