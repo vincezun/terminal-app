@@ -40,6 +40,12 @@ const layout = props => {
           href='../../fonts/roboto-v19-latin-500.woff2'
           type='font/woff2'
         />
+        <link
+          rel='preload'
+          as='font'
+          href='../fonts/roboto-v19-latin-300.woff2'
+          type='font/woff2'
+        />
       </Helmet>
       <Navbar />
       {props.children}
