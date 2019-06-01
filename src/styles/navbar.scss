@@ -45,6 +45,10 @@
       cursor: pointer;
       user-select: none;
 
+      .hamburger {
+        width: 14px;
+      }
+
       &:hover {
         background-color: $c-black;
       }
