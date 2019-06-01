@@ -25,76 +25,83 @@ const pricing = () => {
             <div className='questions'>
               <p id='heading'>Frequently Asked Questions</p>
               <div className='articles'>
-                <article>
-                  <p className='question'>What is Terminal?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat. Aenean faucibus nibh et
-                    justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
-                    risus tristique posuere.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>Are there any discounts?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Aenean
-                    faucibus nibh et justo cursus id rutrum lorem imperdiet.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>Does it work on iPhones?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>How can I reach you?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>Who is it for?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>What can I benefit from this? </p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Aenean
-                    faucibus nibh et justo cursus id rutrum lorem imperdiet.
-                    Nunc ut sem vitae risus tristique posuere.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>What is your goal?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla.
-                  </p>
-                </article>
-                <article>
-                  <p className='question'>Do you have international support?</p>
-                  <p className='description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat. Aenean faucibus nibh et
-                    justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
-                    risus tristique posuere.
-                  </p>
-                </article>
+                <div>
+                  <article>
+                    <p className='question'>What is Terminal?</p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                      justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+                      risus tristique posuere.
+                    </p>
+                  </article>
+                  <article>
+                    <p className='question'>Are there any discounts?</p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique.
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet.
+                    </p>
+                  </article>
+                  <article>
+                    <p className='question'>Does it work on iPhones?</p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </p>
+                  </article>
+                  <article>
+                    <p className='question'>How can I reach you?</p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique.
+                    </p>
+                  </article>
+                </div>
+                <div>
+                  <article>
+                    <p className='question'>Who is it for?</p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor.
+                    </p>
+                  </article>
+                  <article>
+                    <p className='question'>What can I benefit from this? </p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique.
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+                  </article>
+                  <article>
+                    <p className='question'>What is your goal?</p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </p>
+                  </article>
+                  <article>
+                    <p className='question'>
+                      Do you have international support?
+                    </p>
+                    <p className='description'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                      justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+                      risus tristique posuere.
+                    </p>
+                  </article>
+                </div>
               </div>
               <div className='reachUs'>
                 <p className='heading'>HAVE MORE QUESTIONS?</p>
