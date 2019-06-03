@@ -1,0 +1,275 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.signupWrapper {
+  > section:first-child {
+    background-color: $c-black;
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+
+    .w-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      text-align: left;
+    }
+
+    #heading {
+      font-family: $f-condensed-regular;
+      font-size: 3.8rem;
+      line-height: 4.4rem;
+      text-transform: uppercase;
+      color: $c-50-gray;
+      text-align: left;
+    }
+
+    #description {
+      font-family: $f-slab-light;
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+      color: rgba(242, 246, 252, 0.63);
+      text-align: left;
+      margin: 1rem 0 0;
+    }
+
+    %textField {
+      font-family: $f-regular;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: $c-100-gray;
+      background-color: $c-400-gray;
+      border-radius: 2px;
+      width: 100%;
+      padding: 1.2rem 1.3rem;
+      border: 3px solid transparent;
+      caret-color: $c-white;
+
+      &::placeholder {
+        color: rgba($c-100-gray, 0.45);
+      }
+
+      &:focus {
+        outline: none;
+        background-color: $c-450-gray;
+        border: 2px solid $c-300-blue;
+      }
+
+      &:hover {
+        background-color: $c-450-gray;
+      }
+    }
+
+    .firstName.err,
+    .lastName.err,
+    .email.err {
+      border: 2px solid #cc0000;
+    }
+
+    .errMsg {
+      font-family: $f-light;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #cc0000;
+    }
+
+    .name {
+      margin-top: 3rem;
+    }
+
+    .lastName,
+    .email {
+      margin-top: 2rem;
+    }
+
+    .firstName,
+    .lastName,
+    .email {
+      height: 53px;
+    }
+
+    .signupBtn {
+      margin-top: 2rem;
+    }
+
+    .firstName,
+    .lastName,
+    .email {
+      @extend %textField;
+    }
+
+    .signUpSecondary {
+      font-family: $f-condensed-regular;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      color: $c-white;
+      padding: 1.8rem 5.5rem;
+      background-color: $c-200-green;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11),
+        inset 0px -34px 50px -25px rgba(0, 0, 0, 0.16),
+        inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+      border-radius: 2px;
+      border: none;
+      cursor: pointer;
+      transition: all 200ms ease;
+
+      &:hover {
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+      }
+
+      &:active {
+        box-shadow: inset 0px 3px 3px -1px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .success {
+      background-color: $c-400-gray;
+      padding: 4rem 2rem;
+      display: none;
+      margin-top: 4rem;
+      transition: none;
+
+      .title {
+        font-family: $f-regular;
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        text-transform: capitalize;
+        color: $c-50-gray;
+        text-align: center;
+      }
+
+      .msg {
+        font-family: $f-regular;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        color: $c-200-gray;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+
+    .testimonials {
+      border: 2px solid rgba(95, 98, 102, 0.79);
+      margin-top: 3.5rem;
+      padding: 2.2rem 2.2rem;
+
+      %shared {
+        font-family: $f-condensed-regular;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+
+      #title {
+        @extend %shared;
+        color: rgba(165, 167, 173, 0.54);
+        text-align: left;
+      }
+
+      .description {
+        font-family: $f-slab-light;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        color: #a0a2a8;
+        margin-top: 2.5rem;
+        text-align: left;
+      }
+
+      .user {
+        @extend %shared;
+        color: #85878c;
+        margin-top: 1.5rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 480px) {
+  .signupWrapper {
+    > section:first-child {
+      .name {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        margin-top: 4rem;
+      }
+
+      .w-container,
+      #heading,
+      #description {
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+
+      .lastName {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .signupWrapper {
+    > section:first-child {
+      padding: 6rem 0 0;
+
+      .w-container {
+        display: grid;
+        grid-template-columns: 359px 359px;
+        grid-column-gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 4rem;
+        padding-bottom: 8rem;
+      }
+
+      #heading {
+        padding-top: 8rem;
+      }
+
+      #heading,
+      #description {
+        width: 738px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .name {
+        margin-top: 0;
+      }
+
+      .success {
+        margin-left: auto;
+        margin-right: auto;
+        // height: 190px;
+        // margin-bottom: 8rem;
+        margin-top: 0;
+      }
+
+      .testimonials {
+        border: none;
+        border-left: 1px solid rgba(95, 98, 102, 0.79);
+        margin-top: 0;
+        padding-top: 0;
+        height: 293px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .signupWrapper {
+    > section:first-child {
+      .w-container {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        grid-template-columns: 461px 461px;
+      }
+
+      #heading,
+      #description {
+        width: 942px;
+      }
+    }
+  }
+}
