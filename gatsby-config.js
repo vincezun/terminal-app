@@ -10,7 +10,7 @@ module.exports = {
           autoprefixer({
             grid: true,
             flexbox: true,
-            browsers: ['last 2 version']
+            browsers: ['> 1%', 'not ie < 11', 'last 2 versions', 'not dead']
           })
         ]
       }
