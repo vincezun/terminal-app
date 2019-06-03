@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../styles/services.scss';
 import Layout from '../components/Layout/layout';
+import StartTracking from '../components/startTracking';
 import TimeTracking from '../components/timeTracking';
 import FeatureOne from '../components/Feature/featureOne';
 import FeatureTwo from '../components/Feature/featureTwo';
@@ -97,6 +98,7 @@ const services = () => {
           <EmailSupport heading="Also: Rockin' Support " />
         </section>
       </div>
+      <StartTracking />
     </Layout>
   );
 };

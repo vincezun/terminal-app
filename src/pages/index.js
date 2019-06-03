@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout/layout';
+import StartTracking from '../components/startTracking';
 import '../styles/index.scss';
 
 import GetStartedPrimary from '../components/Button/getStartedPrimary';
@@ -112,6 +113,7 @@ class index extends Component {
             <EmailSupport heading='24/7 Email Support' />
           </section>
         </div>
+        <StartTracking />
       </Layout>
     );
   }

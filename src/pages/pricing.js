@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../styles/pricing.scss';
 import Layout from '../components/Layout/layout';
+import StartTracking from '../components/startTracking';
 import Plans from '../components/plans';
 
 const pricing = () => {
@@ -113,6 +114,7 @@ const pricing = () => {
           </div>
         </section>
       </div>
+      <StartTracking />
     </Layout>
   );
 };

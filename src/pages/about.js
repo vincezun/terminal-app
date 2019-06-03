@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../styles/about.scss';
 import Layout from '../components/Layout/layout';
+import StartTracking from '../components/startTracking';
 
 const about = () => {
   return (
@@ -135,6 +136,7 @@ const about = () => {
           </div>
         </section>
       </div>
+      <StartTracking />
     </Layout>
   );
 };
