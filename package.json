@@ -7,7 +7,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "server": "gatsby server"
+    "serve": "gatsby serve"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "autoprefixer": "^9.5.1",
     "formik": "^1.5.7",
     "gatsby": "^2.7.1",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
     "node-sass": "^4.12.0",
