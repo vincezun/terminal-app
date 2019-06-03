@@ -458,7 +458,7 @@
 
     section:nth-child(2) {
       .w-container {
-        margin: 0 2.8rem;
+        margin: 0 2.5rem;
         grid-template-columns: 114px 800px;
         grid-column-gap: 2.2rem;
 
@@ -483,9 +483,9 @@
 
     section:nth-child(4) {
       .w-container {
-        grid-template-columns: 510px 380px;
-        grid-column-gap: 4.6rem;
-        margin: 0 2.8rem;
+        grid-template-columns: 506px 380px;
+        grid-column-gap: 5.5rem;
+        margin: 0 2.5rem;
 
         .easyToUse {
           width: 370px;
@@ -501,19 +501,19 @@
 
     section:nth-child(5) {
       .w-container {
-        margin: 0 2.8rem;
-        grid-template-columns: 365px 550px;
-        grid-column-gap: 2.1rem;
+        margin: 0 2.5rem;
+        grid-template-columns: 368px 550px;
+        grid-column-gap: 2.4rem;
       }
     }
 
     section:nth-child(6) {
       .w-container {
-        margin: 0 2.8rem;
+        margin: 0 2.5rem;
       }
 
       .pricing {
-        width: 937px;
+        width: 939px;
       }
     }
   }

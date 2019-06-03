@@ -49,6 +49,11 @@
 
 @media only screen and(min-width: 480px) {
   .timeTrackingWrapper {
+    .w-container {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
     .content {
       .allDevices {
         width: 50%;
@@ -96,7 +101,7 @@
 
     .content {
       grid-template-columns: 550px 302px;
-      grid-column-gap: 8.5rem;
+      grid-column-gap: 8.7rem;
 
       .allDevices {
         width: 300px;
