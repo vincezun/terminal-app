@@ -10,8 +10,8 @@ const timeTracking = ({ heading }) => {
       <div className='w-container'>
         <div className='content'>
           <div>
-            <p id='heading'>{heading}</p>
-            <p id='description'>
+            <p className='subHeading'>{heading}</p>
+            <p className='description'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros elementum tristique. Duis cursus,
               mi quis viverra ornare, eros dolor interdum nulla.

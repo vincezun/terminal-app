@@ -71,8 +71,8 @@ class index extends Component {
                 <img src={blackIpad} alt='Black ipad' className='blackIpad' />
               </div>
               <div className='easyToUse'>
-                <p id='heading'>Easy to Use</p>
-                <p id='description'>
+                <p className='subHeading'>Easy to Use</p>
+                <p className='description'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros elementum tristique. Duis
                   cursus, mi quis viverra ornare, eros dolor interdum nulla.
@@ -84,8 +84,8 @@ class index extends Component {
           <section>
             <div className='w-container'>
               <div className='takeItAnywhere'>
-                <p id='heading'>You Can Take It Anywhere</p>
-                <p id='description'>
+                <p className='subHeading'>You Can Take It Anywhere</p>
+                <p className='description'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros elementum tristique. Duis
                   cursus, mi quis viverra ornare.
@@ -100,8 +100,8 @@ class index extends Component {
           <section>
             <div className='w-container'>
               <div className='pricing'>
-                <p id='heading'>Our Pricing Is Simple</p>
-                <p id='description'>
+                <p className='subHeading'>Our Pricing Is Simple</p>
+                <p className='description'>
                   No commitments. No credit cards required. Start your 14-day
                   trial today!
                 </p>

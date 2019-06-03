@@ -8,8 +8,8 @@ const startTracking = () => {
     <div className='startTracking'>
       <div className='w-container'>
         <div className='content'>
-          <p id='heading'>Start Tracking Your Time Today!</p>
-          <p id='description'>
+          <p className='subHeading'>Start Tracking Your Time Today!</p>
+          <p className='description'>
             Clocks are so 2000. Get the time tracking of the future.
           </p>
         </div>

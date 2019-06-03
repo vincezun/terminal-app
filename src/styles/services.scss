@@ -12,7 +12,7 @@
     padding-top: 11rem;
     padding-bottom: 6rem;
 
-    #heading {
+    .subHeading {
       font-family: $f-condensed-regular;
       font-size: 3.8rem;
       line-height: 4.4rem;
@@ -21,7 +21,7 @@
       text-align: left;
     }
 
-    #description {
+    .description {
       font-family: $f-slab-light;
       font-size: 1.9rem;
       line-height: 2.5rem;
@@ -151,12 +151,12 @@
       display: grid;
       justify-content: center;
 
-      #heading,
-      #description {
+      .subHeading,
+      .description {
         width: 738px;
       }
 
-      #heading {
+      .subHeading {
         padding-top: 8rem;
       }
 
@@ -172,6 +172,10 @@
 
         .service {
           padding: 1.2rem 3rem;
+        }
+
+        .description {
+          width: initial;
         }
       }
     }
@@ -224,8 +228,8 @@
     }
 
     > section:first-child {
-      #heading,
-      #description {
+      .subHeading,
+      .description {
         width: 940px;
       }
 

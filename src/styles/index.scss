@@ -136,17 +136,17 @@
     .easyToUse {
       background-color: $c-800-gray;
 
-      #heading {
+      .subHeading {
         @extend %heading;
         padding-top: 3rem;
       }
 
-      #description,
-      #heading {
+      .description,
+      .subHeading {
         text-align: left;
       }
 
-      #description {
+      .description {
         @extend %paragraph;
       }
     }
@@ -160,16 +160,16 @@
     }
 
     .takeItAnywhere {
-      #heading {
+      .subHeading {
         @extend %heading;
       }
 
-      #description,
-      #heading {
+      .description,
+      .subHeading {
         text-align: left;
       }
 
-      #description {
+      .description {
         @extend %paragraph;
       }
     }
@@ -194,16 +194,16 @@
     }
 
     .pricing {
-      #heading {
+      .subHeading {
         @extend %heading;
       }
 
       #description,
-      #heading {
+      .subHeading {
         text-align: left;
       }
 
-      #description {
+      .description {
         @extend %paragraph;
       }
     }
@@ -371,7 +371,7 @@
       }
 
       .easyToUse {
-        #heading {
+        .subHeading {
           padding-top: 0;
         }
       }

@@ -12,7 +12,7 @@
     padding: 11rem 0.7rem 3.8rem;
 
     .pricing {
-      #heading {
+      .subHeading {
         font-family: $f-condensed-regular;
         font-size: 3.8rem;
         line-height: 4.4rem;
@@ -21,7 +21,7 @@
         text-align: left;
       }
 
-      #description {
+      .description {
         font-family: $f-slab-light;
         font-size: 1.9rem;
         line-height: 2.5rem;
@@ -40,7 +40,7 @@
       text-align: left;
       padding: 4rem 0;
 
-      #heading {
+      .subHeading {
         font-size: 3.2rem;
         line-height: 3.6rem;
         color: $c-50-gray;
@@ -123,7 +123,7 @@
           justify-self: center;
         }
 
-        #heading {
+        .subHeading {
           width: 738px;
         }
 
@@ -150,7 +150,7 @@
           grid-column-gap: 2rem;
         }
 
-        #heading {
+        .subHeading {
           width: 942px;
         }
 

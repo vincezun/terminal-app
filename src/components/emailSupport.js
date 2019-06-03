@@ -9,8 +9,8 @@ const emailSupport = ({ heading }) => {
       <div className='bagAndHands' />
       <div className='w-container'>
         <div className='support'>
-          <p id='heading'>{heading}</p>
-          <p id='description'>
+          <p className='subHeading'>{heading}</p>
+          <p className='description'>
             Our support is pretty cool. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Suspendisse varius enim in eros elementum
             tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum

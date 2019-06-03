@@ -73,6 +73,7 @@ class contact extends Component {
                           }
                           placeholder='First Name'
                           component='input'
+                          aria-label='First Name'
                         />
                         <ErrorMessage name='firstName'>
                           {msg => <div className='errMsg'>{msg}</div>}
@@ -91,6 +92,7 @@ class contact extends Component {
                               : 'lastName'
                           }
                           placeholder='Last Name'
+                          aria-label='Last Name'
                         />
                         <ErrorMessage name='lastName'>
                           {msg => <div className='errMsg'>{msg}</div>}
@@ -108,6 +110,7 @@ class contact extends Component {
                           errors.email && touched.email ? 'email err' : 'email'
                         }
                         placeholder='Email Address'
+                        aria-label='Email Address'
                       />
                       <ErrorMessage name='email'>
                         {msg => <div className='errMsg'>{msg}</div>}
@@ -128,6 +131,7 @@ class contact extends Component {
                         rows='10'
                         placeholder='What do you need help with?'
                         component='textarea'
+                        aria-label='What do you need help with?'
                       />
                       <ErrorMessage name='message'>
                         {msg => <div className='errMsg'>{msg}</div>}

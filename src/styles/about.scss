@@ -12,7 +12,7 @@
     padding-top: 11rem;
     padding-bottom: 6rem;
 
-    #heading {
+    .subHeading {
       font-family: $f-condensed-regular;
       font-size: 3.8rem;
       line-height: 4.4rem;
@@ -21,7 +21,7 @@
       text-align: left;
     }
 
-    #description {
+    .description {
       font-family: $f-slab-light;
       font-size: 1.9rem;
       line-height: 2.5rem;
@@ -68,7 +68,7 @@
       background-color: $c-600-gray;
       padding: 4.5rem 0;
 
-      #heading {
+      .subHeading {
         font-family: $f-regular;
         font-size: 3.2rem;
         line-height: 3.6rem;
@@ -128,12 +128,12 @@
       display: grid;
       justify-content: center;
 
-      #heading,
-      #description {
+      .subHeading,
+      .description {
         width: 738px;
       }
 
-      #heading {
+      .subHeading {
         padding-top: 8rem;
       }
 
@@ -165,7 +165,7 @@
           justify-content: center;
         }
 
-        #heading {
+        .subHeading {
           width: 738px;
         }
 
@@ -187,8 +187,8 @@
     }
 
     > section:first-child {
-      #heading,
-      #description {
+      .subHeading,
+      .description {
         width: 942px;
       }
 
@@ -199,7 +199,7 @@
 
     section:nth-child(2) {
       .mediumGrayContainer {
-        #heading {
+        .subHeading {
           width: 942px;
         }
 

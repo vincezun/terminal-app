@@ -16,8 +16,8 @@ const services = () => {
           <div className='w-container'>
             <div>
               <div>
-                <p id='heading'>Our Services</p>
-                <p id='description'>
+                <p className='subHeading'>Our Services</p>
+                <p className='description'>
                   What started as a dorm room project exploded into an internet
                   sensation!
                 </p>

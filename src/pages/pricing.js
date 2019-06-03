@@ -12,8 +12,8 @@ const pricing = () => {
         <section>
           <div className='w-container'>
             <div className='pricing'>
-              <p id='heading'>OUR PRICING IS SIMPLE</p>
-              <p id='description'>
+              <p className='subHeading'>OUR PRICING IS SIMPLE</p>
+              <p className='description'>
                 No commitments. No credit cards required. Start your 14-day
                 trial today!
               </p>
@@ -24,7 +24,7 @@ const pricing = () => {
         <section>
           <div className='w-container'>
             <div className='questions'>
-              <p id='heading'>Frequently Asked Questions</p>
+              <p className='subHeading'>Frequently Asked Questions</p>
               <div className='articles'>
                 <div>
                   <article>

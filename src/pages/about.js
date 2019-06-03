@@ -12,8 +12,8 @@ const about = () => {
           <div className='w-container'>
             <div>
               <div>
-                <p id='heading'>3 GUYS CHANGING TIME TRACKING</p>
-                <p id='description'>
+                <p className='subHeading'>3 GUYS CHANGING TIME TRACKING</p>
+                <p className='description'>
                   What started as a dorm room project exploded into an internet
                   sensation!
                 </p>
@@ -58,7 +58,7 @@ const about = () => {
           <div className='theTeam' />
           <div className='mediumGrayContainer'>
             <div className='w-container'>
-              <p id='heading'>The Origins</p>
+              <p className='subHeading'>The Origins</p>
               <div className='origin'>
                 <div>
                   <div>

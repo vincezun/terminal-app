@@ -71,6 +71,7 @@ class signup extends Component {
                             }
                             placeholder='First Name'
                             component='input'
+                            aria-label='First Name'
                           />
                           <ErrorMessage name='firstName'>
                             {msg => <div className='errMsg'>{msg}</div>}
@@ -89,6 +90,7 @@ class signup extends Component {
                                 : 'lastName'
                             }
                             placeholder='Last Name'
+                            aria-label='Lasst Name'
                           />
                           <ErrorMessage name='lastName'>
                             {msg => <div className='errMsg'>{msg}</div>}
@@ -108,6 +110,7 @@ class signup extends Component {
                               : 'email'
                           }
                           placeholder='Email Address'
+                          aria-label='Email Address'
                         />
                         <ErrorMessage name='email'>
                           {msg => <div className='errMsg'>{msg}</div>}
