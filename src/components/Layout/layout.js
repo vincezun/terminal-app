@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
-import StartTracking from '../startTracking';
 import Helmet from 'react-helmet';
 import '../../styles/layout.scss';
 
@@ -49,7 +48,6 @@ const layout = props => {
       </Helmet>
       <Navbar />
       {props.children}
-      <StartTracking />
       <Footer />
     </Fragment>
   );
