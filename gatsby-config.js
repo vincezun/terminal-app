@@ -9,8 +9,7 @@ module.exports = {
         postCssPlugins: [
           autoprefixer({
             grid: true,
-            flexbox: true,
-            browsers: ['> 1%', 'not ie < 11', 'last 2 versions', 'not dead']
+            flexbox: true
           })
         ]
       }
