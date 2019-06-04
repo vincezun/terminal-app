@@ -25,11 +25,5 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "yup": "^0.27.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "not ie < 11",
-    "last 2 versions",
-    "not dead"
-  ]
+  }
 }
