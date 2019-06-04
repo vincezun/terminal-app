@@ -48,8 +48,8 @@ class signup extends Component {
             <div className='signupWrapper'>
               <section>
                 <div>
-                  <p id='heading'>START YOUR FREE 14 DAY TRAIL</p>
-                  <p id='description'>
+                  <p className='subHeading'>START YOUR FREE 14 DAY TRAIL</p>
+                  <p className='desc'>
                     No credit cards. No commitments. Cancel anytime.
                   </p>
                 </div>

@@ -13,22 +13,26 @@
       text-align: left;
     }
 
-    #heading {
+    .subHeading {
       font-family: $f-condensed-regular;
       font-size: 3.8rem;
       line-height: 4.4rem;
       text-transform: uppercase;
       color: $c-50-gray;
       text-align: left;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
 
-    #description {
+    .desc {
       font-family: $f-slab-light;
       font-size: 1.9rem;
       line-height: 2.5rem;
       color: rgba(242, 246, 252, 0.63);
       text-align: left;
       margin: 1rem 0 0;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
 
     %textField {
@@ -193,8 +197,8 @@
       }
 
       .w-container,
-      #heading,
-      #description {
+      .subHeading,
+      .desc {
         margin-left: 3rem;
         margin-right: 3rem;
       }
@@ -223,12 +227,12 @@
         padding-bottom: 8rem;
       }
 
-      #heading {
+      .subHeading {
         padding-top: 8rem;
       }
 
-      #heading,
-      #description {
+      .subHeading,
+      .desc {
         width: 738px;
         margin-left: auto;
         margin-right: auto;
@@ -241,8 +245,6 @@
       .success {
         margin-left: auto;
         margin-right: auto;
-        // height: 190px;
-        // margin-bottom: 8rem;
         margin-top: 0;
       }
 
@@ -266,8 +268,8 @@
         grid-template-columns: 461px 461px;
       }
 
-      #heading,
-      #description {
+      .subHeading,
+      .desc {
         width: 942px;
       }
     }
