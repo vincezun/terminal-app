@@ -26,7 +26,7 @@ const layout = props => {
           as='font'
           href={robotoSlabLight}
           type='font/woff2'
-          crossOrigin
+          crossOrigin='anonymous'
         />
         <link
           rel='preload'
@@ -40,28 +40,28 @@ const layout = props => {
           as='font'
           href={robotoCondensedBold}
           type='font/woff2'
-          crossOrigin
+          crossOrigin='anonymous'
         />
         <link
           rel='preload'
           as='font'
           href={robotoRegular}
           type='font/woff2'
-          crossOrigin
+          crossOrigin='anonymous'
         />
         <link
           rel='preload'
           as='font'
           href={robotoMedium}
           type='font/woff2'
-          crossOrigin
+          crossOrigin='anonymous'
         />
         <link
           rel='preload'
           as='font'
           href={robotoLight}
           type='font/woff2'
-          crossOrigin
+          crossOrigin='anonymous'
         />
       </Helmet>
       <Navbar />
