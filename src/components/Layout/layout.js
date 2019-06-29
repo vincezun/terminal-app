@@ -33,7 +33,7 @@ const layout = props => {
           as='font'
           href={robotoCondensedRegular}
           type='font/woff2'
-          crossOrigin
+          crossOrigin='anonymous'
         />
         <link
           rel='preload'
