@@ -59,7 +59,6 @@ class newsLetter extends Component {
                     errors.email && touched.email ? 'email err' : 'email'
                   }
                   placeholder='Your email'
-                  component='input'
                 />
                 <ErrorMessage name='email'>
                   {msg => <div className='errMsg'>{msg}</div>}
