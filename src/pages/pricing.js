@@ -1,13 +1,16 @@
 import React from 'react';
+import SEO from '../components/seo';
 
 import '../styles/pricing.scss';
+
 import Layout from '../components/Layout/layout';
 import StartTracking from '../components/startTracking';
 import Plans from '../components/plans';
 
 const pricing = () => {
   return (
-    <Layout title='Pricing | Terminal'>
+    <Layout>
+      <SEO title='Pricing' />
       <div className='pricingWrapper'>
         <section>
           <div className='w-container'>

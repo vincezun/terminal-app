@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout/layout';
 import StartTracking from '../components/startTracking';
+import SEO from '../components/seo';
+
 import '../styles/index.scss';
 
 import GetStartedPrimary from '../components/Button/getStartedPrimary';
@@ -23,7 +25,8 @@ import EmailSupport from '../components/emailSupport';
 class index extends Component {
   render() {
     return (
-      <Layout title='Terminal'>
+      <Layout>
+        <SEO title='Home' />
         <div className='homeWrapper'>
           <section>
             <div className='w-container'>

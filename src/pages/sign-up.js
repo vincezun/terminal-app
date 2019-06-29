@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SEO from '../components/seo';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
@@ -42,7 +43,8 @@ class signup extends Component {
           isSubmitting
         }) => (
           <Form>
-            <Layout title='Sign up | Terminal'>
+            <Layout>
+              <SEO title='Sign up' />
               <div className='signupWrapper'>
                 <section>
                   <div>

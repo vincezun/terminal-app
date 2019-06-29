@@ -1,12 +1,15 @@
 import React from 'react';
 
 import '../styles/about.scss';
+
 import Layout from '../components/Layout/layout';
+import SEO from '../components/seo';
 import StartTracking from '../components/startTracking';
 
 const about = () => {
   return (
-    <Layout title='About | Terminal'>
+    <Layout>
+      <SEO title='About' />
       <div className='aboutWrapper'>
         <section>
           <div className='w-container'>

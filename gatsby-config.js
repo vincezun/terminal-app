@@ -1,6 +1,14 @@
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+  siteMetadata: {
+    title: `Terminal`,
+    description: `Terminal is time tracking web app and iPhone app that will change your life.`,
+    author: `Vince Zuño`,
+    social: {
+      twitter: `@vincezun`
+    }
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

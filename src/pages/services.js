@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/seo';
 
 import '../styles/services.scss';
 import Layout from '../components/Layout/layout';
@@ -10,7 +11,8 @@ import EmailSupport from '../components/emailSupport';
 
 const services = () => {
   return (
-    <Layout title='Services | Terminal'>
+    <Layout>
+      <SEO title='Services' />
       <div className='servicesWrapper'>
         <section>
           <div className='w-container'>

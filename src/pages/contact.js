@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SEO from '../components/seo';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
@@ -45,7 +46,8 @@ class contact extends Component {
           isSubmitting
         }) => (
           <Form>
-            <Layout title='Contact | Terminal'>
+            <Layout>
+              <SEO title='Contact' />
               <div className='contactWrapper'>
                 <section>
                   <div className='w-container'>
