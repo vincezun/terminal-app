@@ -1,57 +1,98 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 .plansWrapper {
+  @include breakpoint(xsm-screen) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  @include breakpoint(md-screen) {
+    display: grid;
+    grid-template-columns: 237px 237px 237px;
+    grid-column-gap: 13px;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      'plans plans plans'
+      'needhelp needhelp needhelp';
+    grid-area: plans;
+  }
+
+  @include breakpoint(lg-screen) {
+    grid-template-columns: 299px 299px 299px;
+    grid-column-gap: 22px;
+  }
+
+  .solo {
+    @include breakpoint(md-screen) {
+      justify-self: left;
+    }
+  }
+
+  .team {
+    @include breakpoint(md-screen) {
+      justify-self: right;
+    }
+  }
+
   .solo,
   .pro,
   .team {
     background-color: $c-700-gray;
 
+    @include breakpoint(xsm-screen) {
+      width: 90%;
+    }
+
+    @include breakpoint(md-screen) {
+      width: 237px;
+    }
+
+    @include breakpoint(lg-screen) {
+      width: 299px;
+    }
+
     .heading {
-      font-family: $f-condensed-regular;
-      font-size: 2.1rem;
-      line-height: 3rem;
+      font: 2.1rem/30px $f-condensed-regular;
       color: $c-100-gray;
       display: block;
       text-transform: uppercase;
-      padding: 1.85rem 0;
+      padding: 18px 0;
     }
 
     .price {
-      padding-top: 3.5rem;
+      padding-top: 35px;
 
       li {
         list-style: none;
 
         &:first-child {
-          font-family: $f-light;
-          font-size: 5.2rem;
-          line-height: 4.1rem;
+          font: 5.2rem/41px $f-light;
           color: $c-100-gray;
         }
 
         &:last-child {
-          font-family: $f-regular;
-          font-size: 1.6rem;
-          line-height: 2rem;
+          font: 1.6rem/20px $f-regular;
           color: $c-350-gray;
           text-transform: uppercase;
-          margin-top: 1.5rem;
+          margin-top: 15px;
         }
       }
     }
 
     .package {
       list-style: none;
-      margin-top: 3rem;
-      margin-bottom: 1.5rem;
+      margin: 30px 0 15px;
 
       li {
-        font-family: $f-regular;
-        font-size: 1.6rem;
-        line-height: 2rem;
+        font: 1.6rem/20px $f-regular;
         color: $c-100-gray;
-        padding: 0.6rem 0;
+        padding: 6px 0;
       }
     }
   }
@@ -65,85 +106,26 @@
   }
 
   .pro {
-    margin: 3rem 0;
+    margin: 30px 0;
 
     #pro {
       background-color: rgba(215, 217, 222, 0.09);
     }
+
+    @include breakpoint(md-screen) {
+      margin: 0;
+    }
   }
 
   #needHelp {
-    font-family: $f-regular;
-    font-size: 1.4rem;
+    font: 1.4rem/17px $f-regular;
     color: $c-200-gray;
-    margin-top: 2.5rem;
-  }
-}
 
-@media only screen and(min-width: 480px) {
-  .plansWrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 1rem;
-
-    .solo,
-    .pro,
-    .team {
-      width: 90%;
-    }
-  }
-}
-
-@media only screen and(min-width: 768px) {
-  .plansWrapper {
-    display: grid;
-    grid-template-columns: 237px 237px 237px;
-    grid-column-gap: 1.3rem;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-      'plans plans plans'
-      'needhelp needhelp needhelp';
-    grid-area: plans;
-
-    .pro {
-      margin: 0;
-    }
-
-    .solo,
-    .pro,
-    .team {
-      width: 237px;
-    }
-
-    .solo {
-      justify-self: left;
-    }
-
-    .team {
-      justify-self: right;
-    }
-
-    #needHelp {
+    @include breakpoint(md-screen) {
       grid-area: needhelp;
       margin-top: 0;
-      padding: 3rem 0 0;
+      padding: 30px 0 0;
       justify-self: right;
-    }
-  }
-}
-
-@media only screen and(min-width: 992px) {
-  .plansWrapper {
-    grid-template-columns: 299px 299px 299px;
-    grid-column-gap: 2.2rem;
-
-    .solo,
-    .pro,
-    .team {
-      width: 299px;
     }
   }
 }

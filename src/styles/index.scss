@@ -1,26 +1,30 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 .homeWrapper {
   .w-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 20px;
+
+    @include breakpoint(xsm-screen) {
+      margin: 0 30px;
+    }
+
+    @include breakpoint(md-screen) {
+      margin: 0 15px;
+    }
   }
 
   %heading {
-    font-family: $f-regular;
-    font-size: 3rem;
+    font: 3rem/32px $f-regular;
     color: $c-50-gray;
   }
 
   %paragraph {
-    font-family: $f-regular;
-    font-size: 1.4rem;
+    font: 1.4rem/22px $f-regular;
     color: $c-200-gray;
-    line-height: 2.2rem;
     text-align: left;
-    padding-bottom: 1.75rem;
-    padding-top: 1.25rem;
+    padding: 12px 0 17px;
   }
 
   > section:first-child {
@@ -37,43 +41,108 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 
+    @include breakpoint(lg-screen) {
+      display: grid;
+      grid-template-rows: auto;
+      justify-content: center;
+    }
+
     #smallHeading {
-      font-family: $f-regular;
+      font: 2.1rem/26px $f-regular;
       color: $c-50-gray;
-      font-size: 2.1rem;
-      line-height: 2.6rem;
-      padding-top: 12rem;
+      padding-top: 120px;
+
+      @include breakpoint(xsm-screen) {
+        font: 3.2rem/37px $f-regular;
+      }
+
+      @include breakpoint(md-screen) {
+        font: bold 3.4rem/39px $f-medium;
+        padding-top: 140px;
+      }
+
+      @include breakpoint(lg-screen) {
+        font: bold 3.8rem/43px $f-medium;
+        padding-top: 150px;
+      }
     }
 
     h1 {
-      font-family: $f-condensed-bold;
-      font-size: 5rem;
-      line-height: 4.8rem;
-      margin: 1rem 0 1.5rem;
+      font: 5rem/48px $f-condensed-bold;
+      margin: 10px 0 11px;
       color: $c-white;
+
+      @include breakpoint(md-screen) {
+        font: 7rem/68px $f-condensed-bold;
+        margin-top: 20px;
+      }
+
+      @include breakpoint(lg-screen) {
+        font: 9.4rem/90px $f-condensed-bold;
+        margin-top: 14px;
+        width: 720px;
+      }
     }
 
     p {
-      font-family: $f-slab-light;
-      font-size: 1.75rem;
+      font: 1.75rem/25px $f-slab-light;
       color: rgba(242, 246, 252, 0.63);
-      padding: 0 2.5rem;
-      line-height: 2.5rem;
+      padding: 0 25px;
+
+      @include breakpoint(xsm-screen) {
+        padding: 0;
+      }
+
+      @include breakpoint(md-screen) {
+        font: 1.9rem/30px $f-slab-light;
+      }
     }
 
     .btns {
       display: flex;
       flex-flow: row wrap;
-      margin: 4rem 0;
+      margin: 40px 0;
+
+      @include breakpoint(xsm-screen) {
+        justify-content: center;
+      }
     }
 
     .imgCrop {
       height: 200px;
-      margin-top: 7rem;
+      margin-top: 70px;
+
+      @include breakpoint(xsm-screen) {
+        height: 230px;
+      }
+
+      @include breakpoint(md-screen) {
+        height: 260px;
+      }
+
+      @include breakpoint(lg-screen) {
+        height: 170px;
+        width: 480px;
+        transition: 450ms ease;
+        margin-right: auto;
+        margin-left: auto;
+
+        &:hover {
+          height: 250px;
+        }
+      }
 
       .blackIpad {
         width: 100%;
         display: inline-block;
+
+        @include breakpoint(xsm-screen) {
+          padding: 0;
+        }
+
+        @include breakpoint(sm-screen) {
+          width: 480px;
+        }
       }
     }
   }
@@ -83,26 +152,93 @@
     position: relative;
     z-index: 2;
 
+    .w-container {
+      @include breakpoint(md-screen) {
+        display: grid;
+        grid-template-columns: 110px 630px;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        margin: 0 10px;
+      }
+
+      @include breakpoint(lg-screen) {
+        margin: 0 25px;
+        grid-template-columns: 114px 800px;
+        grid-column-gap: 22px;
+      }
+    }
+
     p {
-      font-family: $f-slab-light;
-      font-size: 1.4rem;
+      font: 1.4rem/17px $f-slab-light;
       color: dimgrey;
-      padding-top: 2rem;
+      padding-top: 20px;
+
+      @include breakpoint(md-screen) {
+        padding: 0;
+        margin-right: 12px;
+      }
+
+      @include breakpoint(lg-screen) {
+        margin-right: 20px;
+      }
     }
 
     .press {
       display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
-      padding-bottom: 2rem;
-      margin-top: 2rem;
+      padding-bottom: 20px;
+      margin-top: 20px;
       transform: translate3d(0, 0, 0);
+
+      @include breakpoint(xsm-screen) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+      }
+
+      @include breakpoint(md-screen) {
+        display: inline-flex;
+        padding: 0;
+        align-items: center;
+      }
 
       img {
         width: 141px;
-        padding: 1.5rem 0;
+        padding: 15px 0;
         transition: 450ms ease;
         transform: translate3d(0, 0, 0);
+
+        @include breakpoint(xsm-screen) {
+          &:first-child,
+          &:nth-child(4) {
+            padding: 15px 12px;
+          }
+        }
+
+        @include breakpoint(md-screen) {
+          width: 105px;
+          margin: 0 12px;
+
+          &:first-child,
+          &:nth-child(4) {
+            padding: 15px 0;
+            width: 95px;
+          }
+        }
+
+        @include breakpoint(lg-screen) {
+          width: 141px;
+          margin: 0 15px;
+
+          &:first-child,
+          &:nth-child(4) {
+            width: 128px;
+          }
+        }
 
         &:hover {
           filter: brightness(1.4);
@@ -119,7 +255,21 @@
     background-color: $c-800-gray;
 
     .w-container {
-      padding: 4em 0;
+      padding: 40px 0;
+
+      @include breakpoint(md-screen) {
+        display: grid;
+        grid-template-columns: 416px 290px;
+        justify-content: center;
+        grid-column-gap: 32px;
+        padding: 80px 0 0;
+      }
+
+      @include breakpoint(lg-screen) {
+        grid-template-columns: 506px 380px;
+        grid-column-gap: 55px;
+        margin: 0 25px;
+      }
     }
 
     .imgCrop {
@@ -127,18 +277,51 @@
       border-bottom: 3px solid $c-400-gray;
       overflow: hidden;
 
+      @include breakpoint(xsm-screen) {
+        height: 440px;
+      }
+
+      @include breakpoint(md-screen) {
+        border-bottom: none;
+        justify-self: left;
+      }
+
       .blackIpad {
         width: 100%;
-        padding: 0 1.5rem;
+        padding: 0 15px;
+
+        @include breakpoint(xsm-screen) {
+          padding: 0;
+        }
+
+        @include breakpoint(sm-screen) {
+          width: 476px;
+        }
+
+        @include breakpoint(md-screen) {
+          width: 416px;
+        }
+
+        @include breakpoint(lg-screen) {
+          width: 490px;
+        }
       }
     }
 
     .easyToUse {
       background-color: $c-800-gray;
 
+      @include breakpoint(lg-screen) {
+        width: 370px;
+      }
+
       .subHeading {
         @extend %heading;
-        padding-top: 3rem;
+        padding-top: 30px;
+
+        @include breakpoint(md-screen) {
+          padding-top: 0;
+        }
       }
 
       .description,
@@ -156,7 +339,21 @@
     background-color: $c-600-gray;
 
     .w-container {
-      padding: 4em 0 0;
+      padding: 40px 0 0;
+
+      @include breakpoint(md-screen) {
+        display: grid;
+        grid-template-columns: 365px 359px;
+        justify-content: center;
+        grid-column-gap: 15px;
+        padding: 80px 0 0;
+      }
+
+      @include breakpoint(lg-screen) {
+        margin: 0 25px;
+        grid-template-columns: 368px 550px;
+        grid-column-gap: 24px;
+      }
     }
 
     .takeItAnywhere {
@@ -178,9 +375,26 @@
       height: 340px;
       overflow: hidden;
 
+      @include breakpoint(xsm-screen) {
+        height: 400px;
+      }
+
+      @include breakpoint(md-screen) {
+        height: 450px;
+        overflow: hidden;
+      }
+
       .iPhone {
         width: 221px;
-        margin-top: 2.5rem;
+        margin-top: 25px;
+
+        @include breakpoint(xsm-screen) {
+          width: 281px;
+        }
+
+        @include breakpoint(md-screen) {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -190,10 +404,29 @@
     background-color: $c-black;
 
     .w-container {
-      padding: 4em 0;
+      padding: 40px 0;
+
+      @include breakpoint(md-screen) {
+        padding: 80px 0 80px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      @include breakpoint(lg-screen) {
+        margin: 0 25px;
+      }
     }
 
     .pricing {
+      @include breakpoint(md-screen) {
+        width: 739px;
+      }
+
+      @include breakpoint(lg-screen) {
+        width: 939px;
+      }
+
       .subHeading {
         @extend %heading;
       }
@@ -205,315 +438,6 @@
 
       .description {
         @extend %paragraph;
-      }
-    }
-  }
-}
-
-@media only screen and(min-width: 480px) {
-  .homeWrapper {
-    .w-container {
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-
-    > section:first-child {
-      #smallHeading {
-        font-size: 3.2rem;
-      }
-
-      p {
-        padding: 0 0em;
-      }
-
-      .btns {
-        justify-content: center;
-      }
-
-      .imgCrop {
-        height: 230px;
-
-        .blackIpad {
-          padding: 0;
-        }
-      }
-    }
-
-    section:nth-child(2) {
-      .press {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 2em;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0;
-
-        img {
-          &:first-child,
-          &:nth-child(4) {
-            padding: 1.5rem 1.25rem;
-          }
-        }
-      }
-    }
-
-    section:nth-child(4) {
-      .imgCrop {
-        height: 440px;
-
-        .blackIpad {
-          padding: 0;
-        }
-      }
-    }
-
-    section:nth-child(5) {
-      .imgCrop {
-        height: 400px;
-
-        .iPhone {
-          width: 281px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and(min-width: 550px) {
-  .homeWrapper {
-    > section:first-child {
-      .imgCrop {
-        .blackIpad {
-          width: 480px;
-        }
-      }
-    }
-
-    section:nth-child(4) {
-      .imgCrop {
-        .blackIpad {
-          width: 476px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and(min-width: 768px) {
-  .homeWrapper {
-    .w-container {
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    }
-
-    > section:first-child {
-      #smallHeading {
-        font-family: $f-medium;
-        font-size: 3.4rem;
-        font-weight: bold;
-        padding-top: 14rem;
-      }
-
-      h1 {
-        font-size: 7rem;
-        margin-top: 2rem;
-      }
-
-      .imgCrop {
-        height: 260px;
-      }
-
-      p {
-        font-size: 1.9rem;
-      }
-    }
-
-    section:nth-child(2) {
-      .w-container {
-        display: grid;
-        grid-template-columns: 110px 630px;
-        justify-content: center;
-        align-items: center;
-        padding: 2.5rem 0;
-        margin: 0 1rem;
-      }
-
-      p {
-        padding: 0;
-        margin-right: 1.25rem;
-      }
-
-      .press {
-        display: inline-flex;
-        padding: 0;
-        align-items: center;
-
-        img {
-          width: 105px;
-          margin-left: 1.25rem;
-          margin-right: 1.25rem;
-
-          &:first-child,
-          &:nth-child(4) {
-            padding: 1.5rem 0;
-            width: 95px;
-          }
-        }
-      }
-    }
-
-    section:nth-child(4) {
-      .w-container {
-        display: grid;
-        grid-template-columns: 416px 290px;
-        justify-content: center;
-        grid-column-gap: 3.2rem;
-        padding: 8em 0 0;
-      }
-
-      .easyToUse {
-        .subHeading {
-          padding-top: 0;
-        }
-      }
-
-      .imgCrop {
-        border-bottom: none;
-        justify-self: left;
-        .blackIpad {
-          width: 416px;
-        }
-      }
-    }
-
-    section:nth-child(5) {
-      .w-container {
-        display: grid;
-        grid-template-columns: 365px 359px;
-        justify-content: center;
-        grid-column-gap: 1.5rem;
-        padding: 8rem 0 0;
-      }
-
-      .imgCrop {
-        height: 450px;
-        overflow: hidden;
-        .iPhone {
-          margin-top: 0;
-        }
-      }
-    }
-
-    section:nth-child(6) {
-      .w-container {
-        padding: 8rem 0;
-        padding-left: 0;
-        padding-right: 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-      }
-
-      .pricing {
-        width: 739px;
-      }
-    }
-  }
-}
-
-@media only screen and(min-width: 992px) {
-  .homeWrapper {
-    > section:first-child {
-      display: grid;
-      grid-template-rows: auto;
-      justify-content: center;
-
-      .imgCrop {
-        height: 170px;
-        width: 480px;
-        transition: 450ms ease;
-        margin-right: auto;
-        margin-left: auto;
-
-        &:hover {
-          height: 250px;
-        }
-      }
-
-      #smallHeading {
-        font-size: 3.8rem;
-        padding-top: 15rem;
-      }
-
-      h1 {
-        font-size: 9.4rem;
-        margin-top: 1.4rem;
-        line-height: 9rem;
-        width: 720px;
-      }
-
-      p {
-        font-size: 2rem;
-      }
-    }
-
-    section:nth-child(2) {
-      .w-container {
-        margin: 0 2.5rem;
-        grid-template-columns: 114px 800px;
-        grid-column-gap: 2.2rem;
-
-        p {
-          margin-right: 2rem;
-        }
-
-        .press {
-          img {
-            width: 141px;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-
-            &:first-child,
-            &:nth-child(4) {
-              width: 128px;
-            }
-          }
-        }
-      }
-    }
-
-    section:nth-child(4) {
-      .w-container {
-        grid-template-columns: 506px 380px;
-        grid-column-gap: 5.5rem;
-        margin: 0 2.5rem;
-
-        .easyToUse {
-          width: 370px;
-        }
-
-        .imgCrop {
-          .blackIpad {
-            width: 490px;
-          }
-        }
-      }
-    }
-
-    section:nth-child(5) {
-      .w-container {
-        margin: 0 2.5rem;
-        grid-template-columns: 368px 550px;
-        grid-column-gap: 2.4rem;
-      }
-    }
-
-    section:nth-child(6) {
-      .w-container {
-        margin: 0 2.5rem;
-      }
-
-      .pricing {
-        width: 939px;
       }
     }
   }

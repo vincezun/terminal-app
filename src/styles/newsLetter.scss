@@ -1,8 +1,13 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 .newsLetterWrapper {
-  margin-top: 3.3rem;
+  margin-top: 33px;
+
+  @include breakpoint(md-screen) {
+    margin-top: 0;
+  }
 
   .subscribe {
     display: grid;
@@ -10,12 +15,11 @@
     align-items: flex-start;
 
     .email {
-      font-family: $f-regular;
-      font-size: 1.4rem;
+      font: 1.4rem/17px $f-regular;
       color: $c-100-gray;
       width: 100%;
       height: 39px;
-      padding: 0.7em 1.2rem;
+      padding: 7px 12px;
       background-color: $c-400-gray;
       border: 1px solid transparent;
       border-top-left-radius: 2px;
@@ -34,12 +38,11 @@
     }
 
     .okBtn {
-      font-family: $f-condensed-regular;
-      font-size: 1.6rem;
+      font: 1.6rem/19px $f-condensed-regular;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.68);
       border: 1px solid transparent;
-      padding: 0.9rem 1rem;
+      padding: 9px 10px;
       width: 100%;
       cursor: pointer;
       background-color: $c-350-gray;
@@ -68,23 +71,24 @@
     }
 
     .errMsg {
-      font-family: $f-light;
-      font-size: 1.1rem;
-      margin-top: 1rem;
+      font: 1.1rem/14px $f-light;
+      margin-top: 10px;
       color: #cc0000;
     }
   }
 
   .success {
     background-color: $c-400-gray;
-    padding: 4rem 2rem;
+    padding: 40px 20px;
     display: none;
-    margin-top: 4rem;
+    margin-top: 40px;
+
+    @include breakpoint(md-screen) {
+    }
+    margin-top: 0;
 
     .msg {
-      font-family: $f-regular;
-      font-size: 1.5rem;
-      line-height: 2.2rem;
+      font: 1.5rem/22px $f-regular;
       color: $c-200-gray;
       text-align: center;
       margin-top: 0;
@@ -94,7 +98,7 @@
   .logo {
     width: 17px;
     height: 17px;
-    margin: 2rem 0;
+    margin: 20px 0;
   }
 
   .socialLinks {
@@ -110,21 +114,19 @@
     }
 
     .facebook {
-      margin-left: 1rem;
+      margin-left: 10px;
     }
   }
 
   p {
-    font-family: $f-regular;
-    font-size: 1.1rem;
+    font: 1.1rem/14px $f-regular;
     color: $c-400-gray;
-    margin-top: 1rem;
+    margin-top: 10px;
     width: 100%;
   }
 
   .companyLogo {
-    font-family: $f-medium;
-    font-size: 2.1rem;
+    font: 2.1rem/24px $f-medium;
     color: $c-400-gray;
     border-bottom: 3px solid $c-400-gray;
     transition: 200ms ease;
@@ -133,16 +135,6 @@
 
     &:hover {
       border-bottom-color: $c-600-blue;
-    }
-  }
-}
-
-@media only screen and(min-width: 768px) {
-  .newsLetterWrapper {
-    margin-top: 0;
-
-    .success {
-      margin-top: 0;
     }
   }
 }

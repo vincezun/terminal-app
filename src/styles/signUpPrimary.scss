@@ -1,28 +1,26 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 .signUpPrimary {
-  font-family: $f-regular;
-  font-size: 1.1rem;
+  font: 1.1rem/14px $f-regular;
   text-transform: uppercase;
   color: $c-white;
-  padding: 0.64rem 2rem;
+  padding: 6px 20px;
   display: none;
   background-color: transparent;
   border: 1px solid $c-400-gray;
-  letter-spacing: 0.15rem;
+  letter-spacing: 1px;
   transition: all 200ms ease;
 
   &:hover {
     background-color: $c-black;
   }
-}
 
-@media only screen and(min-width: 992px) {
-  .signUpPrimary {
+  @include breakpoint(lg-screen) {
     display: inline-block;
-    padding-top: 0.7rem;
+    padding-top: 7px;
     position: absolute;
-    right: -10.55rem;
+    right: -105px;
   }
 }

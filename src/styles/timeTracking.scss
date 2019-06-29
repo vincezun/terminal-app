@@ -1,21 +1,18 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 %heading {
-  font-family: $f-regular;
-  font-size: 3rem;
+  font: 3rem/33px $f-regular;
   color: $c-50-gray;
   text-align: left;
 }
 
 %paragraph {
-  font-family: $f-regular;
-  font-size: 1.4rem;
+  font: 1.4rem/22px $f-regular;
   color: $c-200-gray;
-  line-height: 2.2rem;
   text-align: left;
-  padding-bottom: 1.75rem;
-  padding-top: 1.25rem;
+  padding: 12px 0 17px;
 }
 
 .timeTrackingWrapper {
@@ -24,86 +21,66 @@
   margin-top: -1px;
 
   .w-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 20px;
+
+    @include breakpoint(xsm-screen) {
+      margin: 0 30px;
+    }
+
+    @include breakpoint(lg-screen) {
+      margin: 0 28px;
+    }
   }
 
   .content {
+    @include breakpoint(md-screen) {
+      display: grid;
+      grid-template-columns: 479px 230px;
+      grid-column-gap: 25px;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      padding: 80px 0;
+    }
+
+    @include breakpoint(lg-screen) {
+      grid-template-columns: 550px 302px;
+      grid-column-gap: 87px;
+    }
+
     .subHeading {
       @extend %heading;
-      padding-top: 4rem;
-      line-height: 3.5rem;
+      padding-top: 40px;
+      line-height: 35px;
       padding-bottom: 0;
+
+      @include breakpoint(md-screen) {
+        padding: 0;
+      }
     }
 
     .description {
       @extend %paragraph;
+
+      @include breakpoint(md-screen) {
+        padding-bottom: 30px;
+      }
     }
 
     .allDevices {
       max-width: 100%;
-      padding: 2rem 3.5rem 4rem;
-    }
-  }
-}
+      padding: 20px 35px 40px;
 
-@media only screen and(min-width: 480px) {
-  .timeTrackingWrapper {
-    .w-container {
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-
-    .content {
-      .allDevices {
+      @include breakpoint(xsm-screen) {
         width: 50%;
-        padding: 2rem 0 4rem;
-      }
-    }
-  }
-}
-
-@media only screen and(min-width: 768px) {
-  .timeTrackingWrapper {
-    .w-container {
-      padding: 0;
-    }
-
-    .content {
-      display: grid;
-      grid-template-columns: 479px 230px;
-      grid-column-gap: 2.5rem;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      padding: 8rem 0;
-
-      .subHeading {
-        padding: 0;
+        padding: 20px 0 40px;
       }
 
-      .description {
-        padding-bottom: 3rem;
-      }
-
-      .allDevices {
+      @include breakpoint(md-screen) {
         width: 229px;
       }
-    }
-  }
-}
 
-@media only screen and(min-width: 992px) {
-  .timeTrackingWrapper {
-    .w-container {
-      margin: 0 2.8rem;
-    }
-
-    .content {
-      grid-template-columns: 550px 302px;
-      grid-column-gap: 8.7rem;
-
-      .allDevices {
+      @include breakpoint(lg-screen) {
         width: 300px;
       }
     }

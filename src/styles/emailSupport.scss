@@ -1,8 +1,23 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 .emailSupportWrapper {
   background-color: $c-800-gray;
+
+  @include breakpoint(md-screen) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .w-container {
+    padding-bottom: 60px;
+    margin: 0 20px;
+
+    @include breakpoint(xsm-screen) {
+      margin: 0 30px;
+    }
+  }
 
   .bagAndHands {
     max-width: 100%;
@@ -10,69 +25,38 @@
     background-size: cover;
     background-position: center center;
     height: 226px;
+
+    @include breakpoint(md-screen) {
+      height: 100%;
+    }
   }
 
   .subHeading {
-    font-family: $f-regular;
-    font-size: 3rem;
+    font: 3rem/35px $f-regular;
     color: $c-50-gray;
     text-align: left;
-    padding-top: 3.5rem;
-    line-height: 3.5rem;
-    padding-bottom: 0;
+    padding: 35px 0 0;
   }
 
   .description {
-    font-family: $f-regular;
-    font-size: 1.4rem;
+    font: 1.4rem/22px $f-regular;
     color: $c-200-gray;
-    line-height: 2.2rem;
     text-align: left;
-    padding-bottom: 1.75rem;
-    padding-top: 1.25rem;
+    padding: 12px 0 17px;
   }
 
   .support {
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
-  }
 
-  .w-container {
-    padding-bottom: 6rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-
-@media only screen and(min-width: 480px) {
-  .emailSupportWrapper {
-    .w-container {
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-  }
-}
-
-@media only screen and(min-width: 768px) {
-  .emailSupportWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    .bagAndHands {
-      height: 100%;
+    @include breakpoint(md-screen) {
+      padding: 30px 20px;
     }
 
-    .support {
-      padding: 3rem 2rem;
-    }
-  }
-}
-
-@media only screen and(min-width: 1112px) {
-  .emailSupportWrapper {
-    .support {
-      width: 526px;
+    @include breakpoint(lg-screen) {
+      padding: 30px 0 30px 20px;
+      width: 440px;
     }
   }
 }

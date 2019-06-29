@@ -1,5 +1,6 @@
 @import '_colors.scss';
 @import '_typography.scss';
+@import '_mixins.scss';
 
 .startTracking {
   background-color: $c-black;
@@ -10,54 +11,40 @@
   );
 
   .w-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-bottom: 6rem;
-  }
+    margin: 0 20px;
+    padding-bottom: 60px;
 
-  .content {
-    .subHeading {
-      font-family: $f-condensed-regular;
-      font-size: 3.2rem;
-      line-height: 3.6rem;
-      color: $c-50-gray;
-      padding-top: 4rem;
-    }
-
-    .description {
-      font-family: $f-slab-light;
-      font-size: 1.8rem;
-      line-height: 2.5rem;
-      color: rgba(242, 246, 252, 0.63);
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-    }
-  }
-}
-
-@media only screen and(min-width: 768px) {
-  .startTracking {
-    .w-container {
+    @include breakpoint(md-screen) {
       display: grid;
       grid-template-columns: 493px 245px;
       justify-content: center;
       align-items: center;
-      padding: 5rem 0;
-      margin: 0 1.5rem;
+      padding: 50px 0;
+      margin: 0 15px;
     }
 
-    .content {
-      text-align: left;
+    @include breakpoint(lg-screen) {
+      grid-template-columns: 554px 350px;
+      grid-column-gap: 38px;
+      margin: 0 25px;
     }
   }
-}
 
-@media only screen and(min-width: 992px) {
-  .startTracking {
-    .w-container {
-      grid-template-columns: 554px 350px;
-      grid-column-gap: 3.8rem;
-      margin: 0 2.5rem;
+  .content {
+    @include breakpoint(md-screen) {
+      text-align: left;
+    }
+
+    .subHeading {
+      font: 3.2rem/36px $f-condensed-regular;
+      color: $c-50-gray;
+      padding-top: 40px;
+    }
+
+    .description {
+      font: 1.8rem/25px $f-slab-light;
+      color: rgba(242, 246, 252, 0.63);
+      margin: 10px 0 30px;
     }
   }
 }
