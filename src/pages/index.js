@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import '../styles/index.scss';
 
 import GetStartedPrimary from '../components/Button/getStartedPrimary';
-import LearnMore from '../components/Button/LearnMore';
+import LearnMore from '../components/Button/learnMore';
 
 import blackIpad from '../images/black-ipad.png';
 import forbes from '../images/forbes-logo.svg';
