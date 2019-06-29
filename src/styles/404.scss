@@ -1,0 +1,48 @@
+@import '_colors.scss';
+@import '_typography.scss';
+@import '_mixins.scss';
+
+.page-not-found-background {
+  background-color: $c-800-gray;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 110px 40px 50px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  padding: 30px 30px;
+
+  @include breakpoint(md-lg-screen) {
+    grid-template-rows: 210px 40px 50px;
+  }
+
+  .title {
+    font: 13rem/110px $f-condensed-bold;
+    color: $c-white;
+    text-shadow: 4px 4px $c-300-gray;
+
+    @include breakpoint(md-lg-screen) {
+      font: 20rem/210px $f-condensed-bold;
+    }
+  }
+
+  .sub-title {
+    font: 2.5rem/30px $f-condensed-bold;
+    color: $c-white;
+
+    @include breakpoint(md-lg-screen) {
+      font: 3.5rem/40px $f-condensed-bold;
+    }
+  }
+
+  .description {
+    font: 1.4rem/20px $f-regular;
+    color: $c-white;
+
+    @include breakpoint(md-lg-screen) {
+      font: 1.8rem/24px $f-regular;
+    }
+  }
+}
