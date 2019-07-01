@@ -30,7 +30,7 @@ class index extends Component {
         <div className='homeWrapper'>
           <section>
             <div className='w-container'>
-              <p id='smallHeading'>TIME TRACKING IS NOW</p>
+              <p className='subHeading'>TIME TRACKING IS NOW</p>
               <h1>BEAUTIFUL & POWERFUL</h1>
               <p>
                 Terminal is time tracking web app and iPhone app that will

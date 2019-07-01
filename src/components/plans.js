@@ -50,7 +50,7 @@ const plans = () => {
         </ul>
         <GetStartedNow />
       </div>
-      <p id='needHelp'>Need Help? Reach us at contact@terminal.com</p>
+      <p className='needHelp'>Need Help? Reach us at contact@terminal.com</p>
     </div>
   );
 };

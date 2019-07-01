@@ -12,21 +12,23 @@ const featureOne = () => {
         <figure>
           <img src={record} alt='Record icon' className='record icon' />
           <div>
-            <figcaption id='subHeading'>Record your work.</figcaption>
+            <figcaption className='featureName'>Record your work.</figcaption>
             <p>Vivamus sollicitudin, felis vitae facilisis.</p>
           </div>
         </figure>
         <figure>
           <img src={play} alt='Play icon' className='play icon' />
           <div>
-            <figcaption id='subHeading'>Play it back.</figcaption>
+            <figcaption className='featureName'>Play it back.</figcaption>
             <p>Vivamus sollicitudin, felis vitae facilisis mollis, diam.</p>
           </div>
         </figure>
         <figure>
           <img src={pause} alt='Pause icon' className='pause icon' />
           <div>
-            <figcaption id='subHeading'>Pause at any moments.</figcaption>
+            <figcaption className='featureName'>
+              Pause at any moments.
+            </figcaption>
             <p>Vivamus sollicitudin, felis vitae facilisis mollis.</p>
           </div>
         </figure>
