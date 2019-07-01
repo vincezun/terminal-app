@@ -35,6 +35,7 @@ module.exports = {
         orientation: `landscape`,
         icon: `src/images/terminal.png`
       }
-    }
+    },
+    `gatsby-plugin-offline`
   ]
 };

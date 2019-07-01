@@ -17,6 +17,7 @@
     "formik": "^2.0.1-rc.8",
     "gatsby": "^2.11.3",
     "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-sass": "^2.0.11",
