@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import '../../styles/404-button.scss';
 
 const Button4 = () => (
-  <Link to='/' className='button-4'>
+  <Link to='/' className='button-4' role='button'>
     Back to homepage
   </Link>
 );

@@ -5,7 +5,7 @@ import '../../styles/getSupport.scss';
 const getSupport = () => {
   return (
     <Fragment>
-      <Link to='/contact' className='getSupport'>
+      <Link to='/contact' className='getSupport' role='button'>
         GET SUPPORT NOW
       </Link>
     </Fragment>

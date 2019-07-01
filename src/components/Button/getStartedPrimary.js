@@ -5,7 +5,7 @@ import '../../styles/getStartedPrimary.scss';
 const getStartedPrimary = () => {
   return (
     <Fragment>
-      <Link to='/sign-up' className='getStartedPrimary'>
+      <Link to='/sign-up' className='getStartedPrimary' role='button'>
         GET STARTED NOW
       </Link>
     </Fragment>

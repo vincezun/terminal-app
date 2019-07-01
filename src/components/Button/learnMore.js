@@ -5,7 +5,7 @@ import '../../styles/learnMore.scss';
 const learnMore = () => {
   return (
     <Fragment>
-      <Link to='/about' className='learnMore'>
+      <Link to='/about' className='learnMore' role='button'>
         LEARN MORE
       </Link>
     </Fragment>
