@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Terminal`,
     description: `Terminal is time tracking web app and iPhone app that will change your life.`,
-    author: `Vince Zuño`,
+    author: `Vince Zuño <vincezun@yahoo.com> (https://vincezun.com)`,
     social: {
       twitter: `@vincezun`
     }
@@ -31,8 +31,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#1d1f21`,
         theme_color: `#1d1f21`,
-        display: `standalone`,
-        orientation: `landscape`,
+        display: `minimal-ui`,
         icon: `src/images/terminal.png`
       }
     },
