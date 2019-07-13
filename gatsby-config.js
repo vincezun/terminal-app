@@ -34,7 +34,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/terminal.png`
       }
-    },
-    `gatsby-plugin-offline`
+    }
   ]
 };
