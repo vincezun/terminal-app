@@ -1,17 +1,15 @@
-import React, { Fragment, Component } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import '../../styles/signUpPrimary.scss';
 
-class signUpPrimary extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Link to='/sign-up' className='signUpPrimary' role='button'>
-          SIGN UP
-        </Link>
-      </Fragment>
-    );
-  }
-}
+const signUpPrimary = () => {
+  return (
+    <>
+      <Link to="/sign-up" className="signUpPrimary" role="button">
+        SIGN UP
+      </Link>
+    </>
+  );
+};
 
 export default signUpPrimary;

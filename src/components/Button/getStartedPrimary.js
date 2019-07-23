@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import '../../styles/getStartedPrimary.scss';
 
 const getStartedPrimary = () => {
   return (
-    <Fragment>
-      <Link to='/sign-up' className='getStartedPrimary' role='button'>
+    <>
+      <Link to="/sign-up" className="getStartedPrimary" role="button">
         GET STARTED NOW
       </Link>
-    </Fragment>
+    </>
   );
 };
 
